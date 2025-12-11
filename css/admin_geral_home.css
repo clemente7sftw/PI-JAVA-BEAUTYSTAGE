@@ -1,39 +1,101 @@
-*{
+* {
     font-family: "Inter Tight", sans-serif;
 }
-body{
+
+body {
     background-color: #FFFFFF;
 }
+
 header {
     display: flex;
     align-items: center;
+    justify-content: space-between;
+    padding: 15px 40px;
     position: relative;
-    transition: all 0.5s ease;
+    font-size: 15px;
 }
-header p:first-of-type {
-    color: #235AFF; 
+
+.grupo_esquerda,
+.grupo_direita {
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
-header p:hover{
+
+.grupo_esquerda img {
+    width: 35px;
+}
+.grupo_direita img {
+    width: 30px;
+}
+
+.grupo_esquerda p,
+.grupo_direita p {
+    color: #00000067;
     cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.grupo_esquerda .item_header:first-child p {
     color: #235AFF;
 }
-.empresas_admin{
-    span{
-    color: #00000079;
-    }   
-
-    select{
-        border-style: none;
-        cursor: pointer;
-    }
-
+.item_header:hover p {
+    color: #235AFF;
 }
 
-.nav_cruds{
+
+.item_header {
     display: flex;
-    justify-content: center; 
-    gap: 10px; 
-     button{
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 3px;
+}
+
+
+.logo_header {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 70px;
+}
+
+.empresas_admin {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.icone_area img {
+    width: 25px;
+}
+
+.texto_area {
+    display: flex;
+    flex-direction: column;
+    line-height: 18px;
+}
+
+.texto_area span {
+    font-size: 14px;
+    color: #00000079;
+}
+
+.texto_area select {
+    border: none;
+    font-size: 16px;
+    padding: 3px 0;
+    cursor: pointer;
+    color: black;
+}
+
+
+.nav_cruds {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+
+    button {
         color: #00000079;
         height: 35px;
         border-style: solid;
@@ -44,36 +106,41 @@ header p:hover{
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.103);
         cursor: pointer;
         transition: all 0.3s ease;
-        
-   } 
-   button:hover{
-    color: #235AFF ;
-    border-color: #235AFF;
-   }
-}
-section{
-button {
-    color: #00000079;
-    height: 35px;
-    border-style: solid;
-    border-width: 0.5px;
-    border-color: #ffffff;
-    border-radius: 6px;
-    background-color: #ffffff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.103);
-    cursor: pointer;
-    transition: all 0.3s ease;
 
-    display: flex;           
-    align-items: center;    
-    justify-content: center; 
+    }
+
+    button:hover {
+        color: #235AFF;
+        border-color: #235AFF;
+    }
 }
+
+section {
+    button {
+        color: #00000079;
+        height: 35px;
+        border-style: solid;
+        border-width: 0.5px;
+        border-color: #ffffff;
+        border-radius: 6px;
+        background-color: #ffffff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.103);
+        cursor: pointer;
+        transition: all 0.3s ease;
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 }
-.icone_add{
+
+.icone_add {
     width: 20px;
     cursor: pointer;
 }
-.flecha_direita, .flecha_esquerda{
+
+.flecha_direita,
+.flecha_esquerda {
     background-color: #FFFFFF;
     border: none;
     font-size: 20px;
@@ -85,151 +152,123 @@ button {
     height: 25px;
     transition: transform 0.3s ease;
 }
+
 .flecha_esquerda:hover {
     transform: scale(1.2);
 }
+
 .flecha_direita:hover {
     transform: scale(1.2);
 }
 
-.card_profissional{  
-    img{
-        width: 50px;
-}
-}
-.cargo_profissional{
-    color: #00000079;
-}
-.profissionais_cards {
+.titulo_profissionais {
     display: flex;
     align-items: center;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.103);
-    height: 80px;
-    border-radius: 10px;
-    
+    gap: 10px;
+}
+
+.titulo_servicos {
+    display: flex;
+    align-items: center;
+    gap: 10px;
 }
 
 .card_profissional {
-    display: flex;        
-    align-items: center;    
-    gap: 10px;  
-    padding: 10px;         
+    img {
+        width: 50px;
+    }
 }
 
+.cargo_profissional {
+    color: #00000079;
+}
+
+.profissionais_cards {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.card_profissional {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    height: 80px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.103);
+}
+
+
 .card_profissional p {
-    margin: 0;              
+    margin: 0;
 }
 
 .card_profissional div {
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
 }
 
 .selo_avaliacao {
     background-color: #F7D794;
     display: flex;
-    align-items: center; 
+    align-items: center;
     width: 120px;
     height: 30px;
     border-radius: 10px;
 }
 
-/* 
-
-
-select
-span{
-  color: #00000079;
-}
-select{
-    border-style: none;
-}
-
-
-nav
-.nav_cruds{
-    display: flex;
-    justify-content: center; 
-    gap: 10px; 
-     button{
-        color: #00000079;
-        height: 35px;
-        border-style: solid;
-        border-width: 0.5px;
-        border-color: #ffffff;
-        border-radius: 6px;
-        background-color: #ffffff;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.103);
-        cursor: pointer;
-        transition: all 0.3s ease;
-        
-   } 
-   button:hover{
-    color: #235AFF ;
-    border-color: #235AFF;
-   }
-}
-section{
-button {
-    color: #00000079;
-    height: 35px;
-    border-style: solid;
-    border-width: 0.5px;
-    border-color: #ffffff;
-    border-radius: 6px;
-    background-color: #ffffff;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.103);
-    cursor: pointer;
-    transition: all 0.3s ease;
-
-    display: flex;           
-    align-items: center;    
-    justify-content: center; 
-}
-
-}
-
-section {
+#listaServicos {
     display: flex;
     gap: 10px;
     overflow-x: auto;
     scroll-behavior: smooth;
+    white-space: nowrap;
     padding: 10px;
-    scrollbar-width: none;
-    position: relative;
+    flex: 1;
 }
 
-section::-webkit-scrollbar {
+#listaServicos::-webkit-scrollbar {
     display: none;
 }
 
-section button {
+.servicos_wrapper {
     display: flex;
     align-items: center;
-    justify-content: center;
-    gap: 6px;
-    padding: 10px 16px;
+    gap: 10px;
+}
 
+#listaServicos button {
     color: #00000079;
     height: 35px;
-    border-style: solid;
-    border-width: 0.5px;
-    border-color: #ffffff;
+    border: 0.5px solid #ffffff;
     border-radius: 6px;
     background-color: #ffffff;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.103);
+    padding: 0 12px;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
     transition: all 0.3s ease;
 }
 
-section button:hover {
-    border-color: #235AFF;
-    color: #235AFF;
+.flecha_esquerda,
+.flecha_direita {
+    display: none;
+    font-size: 25px;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    color: #00000079;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.103);
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    transition: transform 0.3s ease;
 }
 
-section button img {
-    width: 20px;
+.flecha_esquerda:hover,
+.flecha_direita:hover {
+    transform: scale(1.15);
 }
-
-;
- */
