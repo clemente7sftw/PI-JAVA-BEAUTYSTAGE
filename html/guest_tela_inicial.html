@@ -12,47 +12,40 @@
 </head>
 <body>
 
-    <h3>Serviços</h3>
-    <div>
-        <table class="tags-servicos">
-            <tr>
-                <td><button class="tag-servico"><img src="../assets/icone-corte-de-cabelo.svg" alt="" width="20px">&nbsp;Corte de Cabelo</button></td>
-                <td><button class="tag-servico"><img src="" alt="">&nbsp;Escova</button></td>
-                <td><button class="tag-servico"><img src="" alt="">&nbsp;Nail Art</button></td>
-                <td><button class="tag-servico"><img src="" alt="">&nbsp;Extensão Cílios</button></td>
-            </tr>
-            <!-- <tr>
-                <td class="td-servico">Corte de Cabelo</td>
-                <td class="td-servico">Escova</td>
-                <td class="td-servico">Nail Art</td>
-                <td class="td-servico">Extensão Cílios</td>
-            </tr> -->
-        </table>
+    <h3 class="titulo">Serviços</h3>
+    <div class="tags-servicos">
+        <button class="tag-servico">
+            <img src="../assets/icone-corte-de-cabelo.svg" alt="" width="20px">&nbsp;Corte de Cabelo
+        </button>
+        <button class="tag-servico">
+            <img src="" alt="">&nbsp;Escova
+        </button>
+        <button class="tag-servico">
+            <img src="" alt="">&nbsp;Nail Art
+        </button>
+        <button class="tag-servico">
+            <img src="" alt="">&nbsp;Extensão Cílios
+        </button>
     </div>
     
-    <h3>Salões que podem te interessar</h3>
-    <div class="container-salao">
-        <table class="card-salao">
-            <tr>
-                <td rowspan="6"><img src="../assets/foto-beauty-salon.jpg" alt="" width="100px" class="imagem-salao"></td>
-            </tr>
-            <tr><td><p></p></td></tr>
-            <tr>
-                <td><b>Nome Salão</b></td>
-            </tr>
-                <td class="localizacao-salao"><img src="../assets/icone-localizacao-cinza.png" alt="" width="16px">&nbsp; Cidade/Estado</td>
-            </tr>
-            <tr>
-                <td class="avaliacao-salao"><img src="../assets/icone-estrela.png" alt="" width="15px">&nbsp; Avaliação</td>
-            </tr>
-            <tr><td><p></p></td></tr>
+    <h3 class="titulo">Salões que podem te interessar</h3>
+    <div class="lista-saloes">
+        <div class="card-salao">
+            <img src="../assets/foto-beauty-salon.jpg" alt="" class="imagem-salao">
 
-        </table>
+            <div class="info-salao">
+                <b class="nome-salao">Nome Salão</b>
+            
+                <p class="endereco-salao"><img src="../assets/icone-localizacao-cinza.png" alt="" width="16px">&nbsp; Cidade/Estado</p>
+            
+                <p class="avaliacao-salao"><img src="../assets/icone-estrela.png" alt="" width="15px">&nbsp; Avaliação</p>
+            </div>
+
+            <span class="distancia-salao">2km</span>
+        </div>
     </div>
 
-    <style>
-
-        
+    <style>  
     /* .inter{
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
@@ -65,52 +58,83 @@
             box-sizing: border-box;
             font-family: 'Inter';
             font-size: 14px;
+            background: #fafafa;
         }
 
-        .tag-servico, .td-servico{
+        .tags-servicos{
             display: flex;
-            flex-direction:row;
-            border: 2px solid rgba(0,0,0,0.05);
-            border-radius: 10px;
-            padding: 5px;
-            cursor: pointer;
-            background-color: #ffffff;
-            text-align: center;
-            justify-content: center;
-            align-items: center;
+            flex-wrap: wrap;
+            padding: 0 100px;
+            gap: 20px;
         }
 
-        .tag-servico:hover, .td-servico :hover{
+        .tag-servico{
+            display: flex;
+            text-align: center;
+            align-items: center;
+            cursor: pointer; 
+            padding: 7px;
+            gap: 2px;
+            color: #9d9ea6;;
+            background: #ffffff;
+            border-radius: 10px;
+            border: none;
+        }
+
+        .tag-servico.ativo{
             background-color: #3d3d3d;
             color: white;
         }
 
-        .container-salao{
-            /* display: flex; */
-            margin-left: 20px;
-            border: 1px solid #dddddd;
-            border-radius: 20px;
-            width: 80%;
-            justify-content: center;
-            align-content: center;
+        .titulo{
+            padding: 10px 100px;
+        }
 
-            background: #ffffff;
-            border: 2px solid rgba(0,0,0,0.05);
+        .lista-saloes{
+            display: flex;
+            flex-direction: column;
+            padding: 10px 100px;
+            gap: 12px;
         }
 
         .card-salao{
-            /* align-items: center;
-            justify-content: center; */
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 12px;
+            background: #ffffff;
+            border-radius: 20px;
+            position: relative;
         }
 
         .imagem-salao{
+            width: 120px;
+            height: 100px;
+            object-fit: cover;
             margin: 4px 10px 4px 10px;
             max-width: 100%;
             border-radius: 16px;
         }
 
-        .localizacao-salao, .avaliacao-salao{
+        .info-salao b{
+            font-size: 16px;
+        }
+
+        .info-salao p{
             display: flex;
+            align-items: center;
+            margin: 8px 0;
+            gap: 3px;
+            color: #888;
+        }
+
+        .distancia-salao{
+            position: absolute;
+            font-size: 14px;
+            color: #777;
+            right: 15px;
+            top: 24px;
+            margin: 8px;
         }
     </style>
 

@@ -1,11 +1,135 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Login</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login</title>
 </head>
 <body>
-    
+    <div class="tela-login">
+        <div class="container-login">
+            <h2>Entrar</h2>
+
+            <div class="campo">
+                <label>Email</label>
+                <input type="email" placeholder="seuemail@email.com">
+            </div>
+
+            <div class="campo">
+                <label>Senha</label>
+                <input type="password" placeholder="••••••••">
+            </div>
+
+            <button class="botao">Entrar</button>
+
+            <div class="link-cadastro">
+                Não tem conta? <a href="cadastro.html">Criar agora</a>
+            </div>
+        </div>
+        <div class="imagem-login"></div>
+    </div>
+<style>
+
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        margin: 0;
+        padding: 0;
+        font-family: Inter, sans-serif;
+        background: #faf9f7;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+    }
+
+    .tela-login{
+        display: flex;
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .container-login {
+        flex: 1;
+        overflow: auto;
+        /* align-content: center; */
+        /* width: 90%; */
+        max-width: 380px;
+        background: #ffffff;
+        padding: 30px;
+        border-radius: 20px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+    }
+
+    h2 {
+        margin: 0 0 25px 0;
+        font-weight: 600;
+        color: #222;
+    }
+
+    .campo {
+        margin-bottom: 18px;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+    }
+
+    .campo label {
+        margin-bottom: 6px;
+        font-size: 14px;
+        color: #444;
+    }
+
+    .campo input {
+        padding: 12px;
+        border-radius: 12px;
+        border: 1px solid #ddd;
+        font-size: 15px;
+        background: #f7f6f4;
+    }
+
+    .botao {
+        width: 100%;
+        padding: 14px;
+        margin-top: 10px;
+        background: #4a3626;
+        color: white;
+        border: none;
+        border-radius: 12px;
+        font-size: 16px;
+        cursor: pointer;
+        font-weight: 600;
+    }
+
+    .imagem-login{
+        flex: 1;
+        background-image: url('../assets/foto-beauty-salon.jpg');
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .link-cadastro {
+        margin-top: 18px;
+        font-size: 14px;
+        color: #555;
+        text-align: center;
+    }
+
+    .link-cadastro a {
+        color: #3f2d20;
+        font-weight: 600;
+        text-decoration: none;
+    }
+</style>   
+ 
 </body>
 </html>
