@@ -1,9 +1,140 @@
-/* *{
+*{
     font-family: "Inter Tight", sans-serif;
 }
 body{
     background-color: #FFFFFF;
 }
+header {
+    display: flex;
+    align-items: center;
+    position: relative;
+    transition: all 0.5s ease;
+}
+header p:first-of-type {
+    color: #235AFF; 
+}
+header p:hover{
+    cursor: pointer;
+    color: #235AFF;
+}
+.empresas_admin{
+    span{
+    color: #00000079;
+    }   
+
+    select{
+        border-style: none;
+        cursor: pointer;
+    }
+
+}
+
+.nav_cruds{
+    display: flex;
+    justify-content: center; 
+    gap: 10px; 
+     button{
+        color: #00000079;
+        height: 35px;
+        border-style: solid;
+        border-width: 0.5px;
+        border-color: #ffffff;
+        border-radius: 6px;
+        background-color: #ffffff;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.103);
+        cursor: pointer;
+        transition: all 0.3s ease;
+        
+   } 
+   button:hover{
+    color: #235AFF ;
+    border-color: #235AFF;
+   }
+}
+section{
+button {
+    color: #00000079;
+    height: 35px;
+    border-style: solid;
+    border-width: 0.5px;
+    border-color: #ffffff;
+    border-radius: 6px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.103);
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    display: flex;           
+    align-items: center;    
+    justify-content: center; 
+}
+}
+.icone_add{
+    width: 20px;
+    cursor: pointer;
+}
+.flecha_direita, .flecha_esquerda{
+    background-color: #FFFFFF;
+    border: none;
+    font-size: 20px;
+    cursor: pointer;
+    color: #00000079;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.103);
+    border-radius: 100px;
+    width: 25px;
+    height: 25px;
+    transition: transform 0.3s ease;
+}
+.flecha_esquerda:hover {
+    transform: scale(1.2);
+}
+.flecha_direita:hover {
+    transform: scale(1.2);
+}
+
+.card_profissional{  
+    img{
+        width: 50px;
+}
+}
+.cargo_profissional{
+    color: #00000079;
+}
+.profissionais_cards {
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.103);
+    height: 80px;
+    border-radius: 10px;
+    
+}
+
+.card_profissional {
+    display: flex;        
+    align-items: center;    
+    gap: 10px;  
+    padding: 10px;         
+}
+
+.card_profissional p {
+    margin: 0;              
+}
+
+.card_profissional div {
+    display: flex;
+    flex-direction: column; 
+}
+
+.selo_avaliacao {
+    background-color: #F7D794;
+    display: flex;
+    align-items: center; 
+    width: 120px;
+    height: 30px;
+    border-radius: 10px;
+}
+
+/* 
 
 
 select
