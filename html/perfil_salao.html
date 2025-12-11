@@ -29,12 +29,46 @@
         </div>
     </div>
 
-    <div class="container-servicos">
+    <div class="tags-servicos">
         <button class="tag-servico"><img src="../assets/icone-corte-de-cabelo.svg" alt="" width="20px">&nbsp;Corte de Cabelo</button>
         <button class="tag-servico"><img src="" alt="">&nbsp;Escova</button>
         <button class="tag-servico"><img src="" alt="">&nbsp;Nail Art</button>
         <button class="tag-servico"><img src="" alt="">&nbsp;Extensão Cílios</button>
     </div>
+
+    <div class="lista-servicos">
+        <div class="card-servico">
+            <div class="info-servico">
+                <b class="nome-servico">Corte de cabelo</b>
+                <div class="info-servico2">
+                    <p class="preco-servico">$40.00</p>
+            
+                    <p class="duracao-servico"><img src="../assets/icone-relogio-duracao-cinza.png" alt="" width="12px">30 min</p>
+                </div>
+            </div>
+
+            <span class="botao-adicionar"><button class="botao-agendar"><img src="../assets/icone-adicionar-preto.png" alt="" width="24px"></button></span>
+        </div>
+    </div>
+
+    <div class="continuar-agendamento">
+        <button class="botao-continuar">Continuar (2)</button>
+    </div>
+
+    <div class="card-aviso">
+        <div class="icones-aviso">
+            <img src="../assets/icone-alerta-azul.png" alt="" width="52px" class="icone-alerta">
+            <button class="botao-fechar"><img src="../assets/icone-fechar-azul.png" alt="" width="24px" class="icone-fechar"></button>
+        </div>
+        <div class="texto-aviso">
+            <p>OPS, não é possível fazer um agendamento sem estar cadastrado!</p>
+            <br>
+            <p>Faça login para prosseguir.</p>
+            <br>
+        </div>
+        <button class="botao-login">Ir para o login</button>
+    </div>
+
 
     <style>
         body{
@@ -43,23 +77,20 @@
             box-sizing: border-box;
             font-family: 'Inter', Arial, sans-serif;
             font-size: 14px;
+            background: #fafafa;
         }
 
         .card-dados-salao{
             display: flex;
-            align-items: flex-start;
             gap: 20px;
-            padding: 20px;
-            margin: 80px;
-            background: #ffffff;
+            padding: 20px 80px;
+            margin: 40px 20px;
             border-radius: 20px;
         }
 
         .imagem-salao{
-            width: 320px;
-            height: auto;
+            width: 340px;
             border-radius: 12px;
-            object-fit: cover;
         }
 
         .info-salao{
@@ -79,12 +110,142 @@
             color: #9d9ea6;
         }
 
-        .container-servicos{
+        .tags-servicos{
+            display: flex;
+            flex-wrap: wrap;
+            padding: 0 100px;
+            gap: 20px;
+        }
+
+        .tag-servico{
+            display: flex;
+            text-align: center;
+            align-items: center;
+            cursor: pointer; 
+            padding: 5px;
+            gap: 2px;
+            color:#4e4e4e;
+            background: #fafafa;
+            border: none;
+        }
+
+        .tag-servico.ativo{
+            color: #222222;
+            font-weight: 600;
+        }
+
+        .lista-servicos{
+            display: flex;
+            flex-direction: column;
+            padding: 10px 100px;
+            gap: 12px;
+        }
+
+        .card-servico{
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 12px;
+            background: #ffffff;
+            border-radius: 20px;
+            position: relative;
+        }
+
+        .info-servico b{
+            font-size: 16px;
+        }
+
+        .info-servico2 {
             display: flex;
             gap: 20px;
-            padding: 10px 0;
         }
-        
+
+        .info-servico p{
+            display: flex;
+            align-items: center;
+            margin: 8px 0;
+            gap: 3px;
+            color: #888888;
+        }
+
+        .botao-adicionar{
+            position: absolute;
+            font-size: 14px;
+            color: #777777;
+            right: 8px;
+            top: 20px;
+            margin: 8px;
+        }
+
+        .botao-agendar{
+            border: none;
+            background-color:#ffffff;
+        }
+
+        .continuar-agendamento{
+            display: flex;
+            padding: 10px 100px;
+            gap: 12px;
+        }
+
+        .botao-continuar{
+            display: flex;
+            width: 100%;
+            color: #ffffff;
+            background: #403529;
+            border: none;
+            padding: 12px;
+            gap: 12px;
+            align-items: center;
+            border-radius: 16px;
+            position: relative;
+            justify-content: center;
+        }
+
+
+/* Aviso de convidado */
+        .card-aviso{
+            display:none;
+            background: #ffffff;
+            padding: 20px;
+            border-radius: 20px;
+            margin-left: 120px;
+            margin-right: 120px;
+            font-size: 20px;
+            font-weight: 600;
+            text-align: center;
+        }
+
+        .icones-aviso{
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .botao-fechar{
+            background: transparent;
+            border: none;
+            /* margin-left: 460px; */
+            /* position: absolute; */
+            right: 140px;
+            margin-top: 5px;
+        }
+
+        .texto-aviso{
+            justify-items: center;
+        }
+
+        .botao-login{
+            background: #1d3050;
+            color: #ffffff;
+            padding: 16px;
+            width: 180px;
+            border: none;
+            border-radius: 16px;
+            font-size: 16px;
+            display: flex;
+            justify-content: center;
+        }
+
     </style>
 
 </body>
