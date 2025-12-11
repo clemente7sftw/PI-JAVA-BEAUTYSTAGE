@@ -6,6 +6,7 @@ body {
     background-color: #FFFFFF;
 }
 
+/* HEADER */
 header {
     display: flex;
     align-items: center;
@@ -15,43 +16,49 @@ header {
     font-size: 15px;
 }
 
-.grupo_esquerda,
-.grupo_direita {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.grupo_esquerda img {
-    width: 35px;
-}
-.grupo_direita img {
-    width: 30px;
-}
-
-.grupo_esquerda p,
-.grupo_direita p {
-    color: #00000067;
-    cursor: pointer;
-    transition: color 0.3s ease;
-}
-
-.grupo_esquerda .item_header:first-child p {
-    color: #235AFF;
-}
-.item_header:hover p {
-    color: #235AFF;
-}
-
-
 .item_header {
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
     gap: 3px;
+    cursor: pointer;
 }
 
+.item_header img {
+    width: 35px;
+    transition: filter 0.3s ease;
+}
+
+.item_header p {
+    color: #00000067;
+    transition: color 0.3s ease;
+}
+
+.grupo_esquerda,
+.grupo_direita {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.grupo_direita img {
+    width: 30px;
+}
+
+.grupo_esquerda .item_header:first-child p {
+    color: #235AFF;
+}
+
+.grupo_esquerda .item_header:first-child img,
+.item_header:hover img {
+    filter: brightness(0) saturate(100%) invert(37%) sepia(92%) saturate(749%)
+            hue-rotate(202deg) brightness(94%) contrast(101%);
+}
+
+.item_header:hover p {
+    color: #235AFF;
+}
 
 .logo_header {
     position: absolute;
@@ -60,6 +67,7 @@ header {
     height: 70px;
 }
 
+/* ÁREA DE EMPRESAS */
 .empresas_admin {
     display: flex;
     align-items: center;
@@ -89,49 +97,51 @@ header {
     color: black;
 }
 
-
+/* NAV CRUDS */
 .nav_cruds {
     display: flex;
     justify-content: center;
     gap: 10px;
-
-    button {
+    a{
+        text-decoration: none;
         color: #00000079;
-        height: 35px;
-        border-style: solid;
-        border-width: 0.5px;
-        border-color: #ffffff;
-        border-radius: 6px;
-        background-color: #ffffff;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.103);
-        cursor: pointer;
         transition: all 0.3s ease;
-
     }
-
-    button:hover {
+    a:hover {
         color: #235AFF;
-        border-color: #235AFF;
     }
 }
 
-section {
-    button {
-        color: #00000079;
-        height: 35px;
-        border-style: solid;
-        border-width: 0.5px;
-        border-color: #ffffff;
-        border-radius: 6px;
-        background-color: #ffffff;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.103);
-        cursor: pointer;
-        transition: all 0.3s ease;
+.nav_cruds button {
+    color: #00000079;
+    height: 35px;
+    border: 0.5px solid #ffffff;
+    border-radius: 6px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.103);
+    cursor: pointer;
+    transition: all 0.3s ease;
 
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
+}
+
+.nav_cruds button:hover {
+    color: #235AFF;
+    border-color: #235AFF;
+}
+
+/* SECTION BUTTONS */
+section button {
+    color: #00000079;
+    height: 35px;
+    border: 0.5px solid #ffffff;
+    border-radius: 6px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.103);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .icone_add {
@@ -139,44 +149,37 @@ section {
     cursor: pointer;
 }
 
-.flecha_direita,
-.flecha_esquerda {
-    background-color: #FFFFFF;
+/* FLECHAS */
+.flecha_esquerda,
+.flecha_direita {
+    display: none;
+    font-size: 25px;
+    background-color: white;
     border: none;
-    font-size: 20px;
     cursor: pointer;
     color: #00000079;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.103);
-    border-radius: 100px;
-    width: 25px;
-    height: 25px;
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
     transition: transform 0.3s ease;
 }
 
-.flecha_esquerda:hover {
-    transform: scale(1.2);
-}
-
+.flecha_esquerda:hover,
 .flecha_direita:hover {
-    transform: scale(1.2);
+    transform: scale(1.15);
 }
 
-.titulo_profissionais {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
+.titulo_profissionais,
 .titulo_servicos {
     display: flex;
     align-items: center;
     gap: 10px;
 }
 
-.card_profissional {
-    img {
-        width: 50px;
-    }
+/* PROFISSIONAIS */
+.card_profissional img {
+    width: 50px;
 }
 
 .cargo_profissional {
@@ -199,7 +202,6 @@ section {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.103);
 }
 
-
 .card_profissional p {
     margin: 0;
 }
@@ -218,6 +220,13 @@ section {
     border-radius: 10px;
 }
 
+/* SERVIÇOS */
+.servicos_wrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
 #listaServicos {
     display: flex;
     gap: 10px;
@@ -230,12 +239,6 @@ section {
 
 #listaServicos::-webkit-scrollbar {
     display: none;
-}
-
-.servicos_wrapper {
-    display: flex;
-    align-items: center;
-    gap: 10px;
 }
 
 #listaServicos button {
@@ -251,24 +254,4 @@ section {
     align-items: center;
     gap: 5px;
     transition: all 0.3s ease;
-}
-
-.flecha_esquerda,
-.flecha_direita {
-    display: none;
-    font-size: 25px;
-    background-color: white;
-    border: none;
-    cursor: pointer;
-    color: #00000079;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.103);
-    border-radius: 50%;
-    width: 32px;
-    height: 32px;
-    transition: transform 0.3s ease;
-}
-
-.flecha_esquerda:hover,
-.flecha_direita:hover {
-    transform: scale(1.15);
 }
