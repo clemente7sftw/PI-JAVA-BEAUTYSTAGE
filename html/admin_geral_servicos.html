@@ -40,11 +40,52 @@
         </div>
     </header>  
         <nav class="nav_cruds">
-        <button>Agendamentos</button>
-        <button>Clientes</button>
-        <button>Profissionais</button>
-        <button>Cargos</button>
-        <button class="btn_servicos"><a href="admin_geral_servicos.html">Serviços</a></button>
-    </nav>  
+            <button>Agendamentos</button>
+            <button>Clientes</button>
+            <button>Profissionais</button>
+            <button>Cargos</button>
+            <button class="btn_servicos"><a href="admin_geral_servicos.html">Serviços</a></button>
+        </nav>  
+    <div class="titulo_servicos"> 
+        <h3>‹  Serviços</h3>
+        <a href="admin_geral_add_servicos.html"><img class="icone_add" src="../assets/icone_adicionar.png" alt=""></a>
+    </div>
+<div class="atv_int">
+    <p class="tab active" data-tab="ativos">Ativos</p>  
+    <p class="tab" data-tab="inativos">Inativos</p>
+</div>
+
+    <section class="servicos_cards">
+        <div class="card_servico">
+            <img src="../assets/icone_sem_foto.png" alt="">
+            <div> 
+
+                <p>Nome do servico</p>
+                <p class="info_servico">Duração</p>
+                <p class="info_servico">Preço</p>
+                <p>Cadastrado em:</p>
+                <button>Desativar</button>
+            </div>
+        </div>
+        <div class="card_servico">
+            <img src="../assets/icone_sem_foto.png" alt="">
+            <div>
+                <p>Nome do servico</p>
+                <p class="info_servico">Duração</p>
+                <p class="info_servico">Preço</p>
+                <button>Desativar</button>
+            </div>
+        </div>
+        <div class="card_servico">
+            <img src="../assets/icone_sem_foto.png" alt="">
+            <div>
+                <p>Nome do servico</p>
+                <p class="info_servico">Duração</p>
+                <p class="info_servico">Preço</p>
+                <button>Desativar</button>
+            </div>
+        </div>
+    </section>
+    <script src="../js/admin_geral_servicos.js"></script>
 </body>
 </html>
