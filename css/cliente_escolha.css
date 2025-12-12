@@ -1,0 +1,132 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter';
+    font-size: 14px;
+    background: #fafafa;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 40px;
+    position: relative;
+    font-size: 15px;
+}
+
+.item_header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 3px;
+    cursor: pointer;
+}
+
+.item_header img {
+    width: 35px;
+    transition: filter 0.3s ease;
+}
+
+.item_header p {
+    color: #00000067;
+    transition: color 0.3s ease;
+}
+
+.grupo_esquerda,
+.grupo_direita {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.grupo_direita img {
+    width: 30px;
+}
+
+.grupo_esquerda .item_header:first-child p {
+    color: #235AFF;
+}
+
+.grupo_esquerda .item_header:first-child img,
+.item_header:hover img {
+    filter: brightness(0) saturate(100%) invert(37%) sepia(92%) saturate(749%)
+            hue-rotate(202deg) brightness(94%) contrast(101%);
+}
+
+.item_header:hover p {
+    color: #235AFF;
+}
+
+.logo_header {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 70px;
+}
+
+/* BOTÃO VOLTAR PÁGINA */
+.topo-voltar {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 20px;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    color: #1b1b1b;
+    cursor: pointer;
+}
+
+.topo-voltar svg {
+    transition: transform 0.2s ease; 
+}
+
+.topo-voltar:hover svg {
+    transform: translateX(-3px);
+}
+
+.topo-voltar span{
+    font-weight: 600;
+}
+
+/* CARDS PROFISSIONAIS */
+.lista-profissionais{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 100px;
+    gap: 12px;
+}
+
+.card-profissional{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 8px;
+    background: #ffffff;
+    border-radius: 20px;
+    position: relative;
+}
+
+.imagem-profissional{
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    margin: 4px 10px 4px 10px;
+    max-width: 100%;
+    border-radius: 16px;
+}
+
+.info-profissional b{
+    font-size: 16px;
+}
+
+.info-profissional p{
+    display: flex;
+    align-items: center;
+    margin: 8px 0;
+    gap: 3px;
+    color: #888;
+}

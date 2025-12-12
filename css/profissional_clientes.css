@@ -1,0 +1,180 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter';
+    font-size: 14px;
+    background: #fafafa;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 40px;
+    position: relative;
+    font-size: 15px;
+}
+
+.item_header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 3px;
+    cursor: pointer;
+}
+
+.item_header img {
+    width: 35px;
+    transition: filter 0.3s ease;
+}
+
+.item_header p {
+    color: #00000067;
+    transition: color 0.3s ease;
+}
+
+.grupo_esquerda,
+.grupo_direita {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.grupo_direita img {
+    width: 30px;
+}
+
+.grupo_esquerda .item_header:first-child p {
+    color: #235AFF;
+}
+
+.grupo_esquerda .item_header:first-child img,
+.item_header:hover img {
+    filter: brightness(0) saturate(100%) invert(37%) sepia(92%) saturate(749%)
+            hue-rotate(202deg) brightness(94%) contrast(101%);
+}
+
+.item_header:hover p {
+    color: #235AFF;
+}
+
+.logo_header {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 70px;
+}
+
+/* BOTÃO VOLTAR PÁGINA */
+.topo-voltar {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 20px;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    color: #1b1b1b;
+    cursor: pointer;
+}
+
+.topo-voltar svg {
+    transition: transform 0.2s ease; 
+}
+
+.topo-voltar:hover svg {
+    transform: translateX(-3px);
+}
+
+.topo-voltar span{
+    font-weight: 600;
+}
+
+/* NAV PÁGINAS */
+.nav_cruds {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    a{
+        text-decoration: none;
+        color: #00000079;
+        transition: all 0.3s ease;
+    }
+    a:hover {
+        color: #235AFF;
+    }
+}
+
+.opcao{
+    color: #00000079;
+    height: 35px;
+    border: 0.5px solid #ffffff;
+    border-radius: 6px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.103);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.nav_cruds button:hover{
+    color: #235AFF;
+    border-color: #235AFF;
+}
+
+.pagina-ativa{
+    height: 35px;
+    border: 0.5px solid #ffffff;
+    border-radius: 6px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.103);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color:#235AFF;
+    border-color: #235AFF;
+}
+
+/* CARDS CLIENTES */
+.titulo{
+    padding: 10px 100px;
+    font-size: 20px;
+}
+
+.lista-clientes{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 100px;
+    gap: 12px;
+}
+
+.card-cliente{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 8px;
+    background: #ffffff;
+    border-radius: 20px;
+    position: relative;
+}
+
+.imagem-cliente{
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    margin: 4px 10px 4px 10px;
+    max-width: 100%;
+    border-radius: 16px;
+}
+
+.info-cliente b{
+    font-size: 16px;
+}
+
+.info-cliente p{
+    display: flex;
+    align-items: center;
+    margin: 8px 0;
+    gap: 3px;
+    color: #888;
+}

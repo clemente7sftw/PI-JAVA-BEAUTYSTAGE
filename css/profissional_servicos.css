@@ -1,0 +1,274 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter';
+    font-size: 14px;
+    background: #fafafa;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 40px;
+    position: relative;
+    font-size: 15px;
+}
+
+.item_header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 3px;
+    cursor: pointer;
+}
+
+.item_header img {
+    width: 35px;
+    transition: filter 0.3s ease;
+}
+
+.item_header p {
+    color: #00000067;
+    transition: color 0.3s ease;
+}
+
+.grupo_esquerda,
+.grupo_direita {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.grupo_direita img {
+    width: 30px;
+}
+
+.grupo_esquerda .item_header:first-child p {
+    color: #235AFF;
+}
+
+.grupo_esquerda .item_header:first-child img,
+.item_header:hover img {
+    filter: brightness(0) saturate(100%) invert(37%) sepia(92%) saturate(749%)
+            hue-rotate(202deg) brightness(94%) contrast(101%);
+}
+
+.item_header:hover p {
+    color: #235AFF;
+}
+
+.logo_header {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 70px;
+}
+
+/* BOTÃO VOLTAR PÁGINA */
+.topo-voltar {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 20px;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    color: #1b1b1b;
+    cursor: pointer;
+}
+
+.topo-voltar svg {
+    transition: transform 0.2s ease; 
+}
+
+.topo-voltar:hover svg {
+    transform: translateX(-3px);
+}
+
+.topo-voltar span{
+    font-weight: 600;
+}
+
+/* NAV PÁGINAS */
+.nav_cruds {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    a{
+        text-decoration: none;
+        color: #00000079;
+        transition: all 0.3s ease;
+    }
+    a:hover {
+        color: #235AFF;
+    }
+}
+
+.opcao{
+    color: #00000079;
+    height: 35px;
+    border: 0.5px solid #ffffff;
+    border-radius: 6px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.103);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.nav_cruds button:hover{
+    color: #235AFF;
+    border-color: #235AFF;
+}
+
+.pagina-ativa{
+    height: 35px;
+    border: 0.5px solid #ffffff;
+    border-radius: 6px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.103);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color:#235AFF;
+    border-color: #235AFF;
+}
+
+/* FLECHAS */
+.flecha_esquerda,
+.flecha_direita {
+    display: none;
+    font-size: 25px;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    color: #00000079;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.103);
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    transition: transform 0.3s ease;
+}
+
+.flecha_esquerda:hover,
+.flecha_direita:hover {
+    transform: scale(1.15);
+}
+
+.titulo_profissionais,
+.titulo_servicos {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* SERVIÇOS */
+.titulo{
+    padding: 10px 100px;
+    font-size: 20px;
+}
+
+.servicos_wrapper {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 90px;
+}
+
+#listaServicos {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    white-space: nowrap;
+    padding: 10px;
+    flex: 1;
+}
+
+#listaServicos::-webkit-scrollbar {
+    display: none;
+}
+
+#listaServicos button {
+    color: #000000;
+    height: 35px;
+    border: 0.5px solid #ffffff;
+    border-radius: 6px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.103);
+    padding: 0 12px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: all 0.3s ease;
+}
+
+/* NAV SERVIÇOS */
+.nav-servicos{
+    padding: 0 100px;
+}
+
+.nav-servicos button{
+    background: transparent;
+    border: none;
+}
+
+.nav-servicos p{
+    margin: 8px;
+    
+}
+
+.nav-servicos button:hover, .nav-ativo{
+    color: #403529;
+    .divisor{
+        display: flex;
+    }
+}
+
+.divisor{
+    display: none;
+    width: auto;
+    height: 3px;
+    padding: 0 20px;
+    /* margin: 20px 100px 20px; */
+    border-radius: 5px;
+    background-color: #403529;
+}
+
+/* LISTAGEM SERVIÇOS */
+.lista-servicos{
+            display: flex;
+            flex-direction: column;
+            padding: 10px 100px;
+            gap: 12px;
+        }
+
+        .card-servico{
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            padding: 12px;
+            background: #ffffff;
+            border-radius: 20px;
+            position: relative;
+        }
+
+        .info-servico b{
+            font-size: 16px;
+        }
+
+        .info-servico2 {
+            display: flex;
+            gap: 20px;
+        }
+
+        .info-servico p{
+            display: flex;
+            align-items: center;
+            margin: 8px 0;
+            gap: 3px;
+            color: #888888;
+        }
+

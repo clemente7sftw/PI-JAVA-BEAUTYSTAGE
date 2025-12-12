@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/profissional_servicos.css">
+    <title>Serviços - Profissional</title>
+</head>
+<body>
+    <header>
+        <div class="grupo_esquerda">
+            <div class="item_header">
+                <img class="icones_header" src="../assets/icone_home.png" alt="">
+                <p>Home</p>
+            </div>
+
+            <div class="item_header">
+                <img class="icones_header" src="../assets/icone_agendamentos.png" alt="">
+                <p>Agendamentos</p>
+            </div>
+        </div>
+
+        <img class="logo_header" src="../assets/logo_empresas.png" alt="Logo">
+
+        <div class="grupo_direita">
+            <div class="item_header">
+                <img class="icones_header" src="../assets/icone_perfil.png" alt="">
+                <p>Perfil</p>
+            </div>
+        </div>
+    </header>
+
+    <div class="topo-voltar">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1b1b1b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="15 18 9 12 15 6"></polyline>
+        </svg>
+
+        <span>Serviços</span>
+    </div>
+    <br><br>
+    <nav class="nav_cruds">
+        <button class="pagina-ativa">Serviços</button>
+        <button class="opcao">Agendamentos</button>
+        <button class="opcao">Clientes</button>
+    </nav>
+    <br><br>
+    <h3 class="titulo">Seus serviços</h3>
+    <div class="servicos_wrapper">
+        <button class="flecha_esquerda" id="arrowLeft">‹</button>
+        <section id="listaServicos">
+            <button><img src="../assets/icone_servico.png" alt="">Serviço 1</button>
+            <button><img src="../assets/icone_servico.png" alt="">Serviço 2</button>
+            <button><img src="../assets/icone_servico.png" alt="">Serviço 3</button>
+            <button><img src="../assets/icone_servico.png" alt="">Serviço 4</button>
+            <button><img src="../assets/icone_servico.png" alt="">Serviço 5</button>
+        </section>
+        <button class="flecha_direita" id="arrowRight">›</button>
+    </div>
+    <br>
+    <nav class="nav-servicos">
+        <button class="nav-ativo"><p>Servico 1</p><div class="divisor"></div></button>
+        <button><p>Servico 2</p><div class="divisor"></div></button>
+        <button><p>Servico 3</p><div class="divisor"></div></button>
+        <button><p>Servico 4</p><div class="divisor"></div></button>
+        <button><p>Servico 5</p><div class="divisor"></div></button>
+    </nav>
+
+    <div class="lista-servicos">
+        <div class="card-servico">
+            <div class="info-servico">
+                <b class="nome-servico">Corte de cabelo</b>
+                <div class="info-servico2">
+                    <p class="preco-servico">$40.00</p>
+            
+                    <p class="duracao-servico"><img src="../assets/icone-relogio-duracao-cinza.png" alt="" width="12px">30 min</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

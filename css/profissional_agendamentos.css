@@ -1,0 +1,247 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter';
+    font-size: 14px;
+    background: #fafafa;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 40px;
+    position: relative;
+    font-size: 15px;
+}
+
+.item_header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 3px;
+    cursor: pointer;
+}
+
+.item_header img {
+    width: 35px;
+    transition: filter 0.3s ease;
+}
+
+.item_header p {
+    color: #00000067;
+    transition: color 0.3s ease;
+}
+
+.grupo_esquerda,
+.grupo_direita {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.grupo_direita img {
+    width: 30px;
+}
+
+.grupo_esquerda .item_header:first-child p {
+    color: #235AFF;
+}
+
+.grupo_esquerda .item_header:first-child img,
+.item_header:hover img {
+    filter: brightness(0) saturate(100%) invert(37%) sepia(92%) saturate(749%)
+            hue-rotate(202deg) brightness(94%) contrast(101%);
+}
+
+.item_header:hover p {
+    color: #235AFF;
+}
+
+.logo_header {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 70px;
+}
+
+/* BOTÃO VOLTAR PÁGINA */
+.topo-voltar {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 20px;
+    font-family: 'Inter', sans-serif;
+    font-size: 16px;
+    color: #1b1b1b;
+    cursor: pointer;
+}
+
+.topo-voltar svg {
+    transition: transform 0.2s ease; 
+}
+
+.topo-voltar:hover svg {
+    transform: translateX(-3px);
+}
+
+.topo-voltar span{
+    font-weight: 600;
+}
+
+/* NAV PÁGINAS */
+.nav_cruds {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    a{
+        text-decoration: none;
+        color: #00000079;
+        transition: all 0.3s ease;
+    }
+    a:hover {
+        color: #235AFF;
+    }
+}
+
+.opcao{
+    color: #00000079;
+    height: 35px;
+    border: 0.5px solid #ffffff;
+    border-radius: 6px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.103);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.nav_cruds button:hover{
+    color: #235AFF;
+    border-color: #235AFF;
+}
+
+.pagina-ativa{
+    height: 35px;
+    border: 0.5px solid #ffffff;
+    border-radius: 6px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.103);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    color:#235AFF;
+    border-color: #235AFF;
+}
+
+/* NAV AGENDAMENTOS */
+.nav-agendamentos{
+    padding: 0 100px;
+}
+
+.nav-agendamentos button{
+    background: transparent;
+    border: none;
+}
+
+.nav-agendamentos p{
+    margin: 8px;
+    
+}
+
+.nav-agendamentos button:hover, .nav-ativo{
+    color: #235AFF;
+    .divisor{
+        display: flex;
+    }
+}
+
+.divisor{
+    display: none;
+    width: auto;
+    height: 3px;
+    padding: 0 20px;
+    /* margin: 20px 100px 20px; */
+    border-radius: 5px;
+    background-color: #235AFF;
+}
+
+
+/* LISTAGEM DE SERVIÇOS AGENDADOS NO DIA*/
+.lista-agendamentos{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 100px;
+}
+
+.card-agendamento{
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    padding-bottom: 16px;
+    background: #ffffff;
+    border-radius: 20px;
+}
+
+.data-agendamento{
+    font-weight: 500;
+    color: #403529;
+}
+
+.conteudo-agendamento{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.imagem-salao{
+    width: 180px;
+    max-width: 100%;
+    border-radius: 12px;
+}
+
+.info-agendamento{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+.info-agendamento{
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.info-agendamento p{
+    font-size: 15px;
+    margin: 6px 0;
+    color: #888888;
+}
+
+.botoes-agendamento{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin-top: 16px;
+}
+
+.botao-cancelar{
+    background-color: #ffffff;
+    border: 2px solid #403529;
+    border-radius: 10px;
+    padding: 8px 10px;
+    cursor: pointer;
+}
+
+.botao-visualizar{
+    background-color: #403529;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    padding: 8px 52px;
+    cursor: pointer;
+}
+
+
+

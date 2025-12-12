@@ -29,12 +29,19 @@
         </div>
     </div>
 
-    <div class="tags-servicos">
-        <button class="tag-servico"><img src="../assets/icone-corte-de-cabelo.svg" alt="" width="20px">&nbsp;Corte de Cabelo</button>
+    <!-- <div class="tags-servicos">
+        <button class="tag-servico"><img src="../assets/icone-corte-de-cabelo.svg" alt="" width="20px"><p>Corte de Cabelo</p><div class="divisor"></div></button>
         <button class="tag-servico"><img src="" alt="">&nbsp;Escova</button>
         <button class="tag-servico"><img src="" alt="">&nbsp;Nail Art</button>
         <button class="tag-servico"><img src="" alt="">&nbsp;Extensão Cílios</button>
-    </div>
+    </div> -->
+
+    <nav class="nav-servicos">
+        <button class="nav-ativo"><p>Corte de cabelo</p><div class="divisor"></div></button>
+        <button><p>Escova</p><div class="divisor"></div></button>
+        <button><p>Nail Art</p><div class="divisor"></div></button>
+        <button><p>Extensão Cílios</p><div class="divisor"></div></button>
+    </nav>
 
     <div class="lista-servicos">
         <div class="card-servico">
@@ -203,7 +210,7 @@
         }
 
 
-/* Aviso de convidado */
+/* AVISO DE CONVIDADO */
         .card-aviso{
             display:none;
             background: #ffffff;
@@ -245,6 +252,38 @@
             display: flex;
             justify-content: center;
         }
+
+/* NAV SERVIÇOS */
+.nav-servicos{
+    padding: 0 100px;
+}
+
+.nav-servicos button{
+    background: transparent;
+    border: none;
+}
+
+.nav-servicos p{
+    margin: 8px;
+    
+}
+
+.nav-servicos button:hover, .nav-ativo{
+    color: #403529;
+    .divisor{
+        display: flex;
+    }
+}
+
+.divisor{
+    display: none;
+    width: auto;
+    height: 3px;
+    padding: 0 20px;
+    /* margin: 20px 100px 20px; */
+    border-radius: 5px;
+    background-color: #403529;
+}
 
     </style>
 
