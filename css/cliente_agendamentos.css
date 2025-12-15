@@ -1,3 +1,4 @@
+
 body{
     margin: 0;
     padding: 0;
@@ -68,94 +69,44 @@ header {
     height: 70px;
 }
 
-/* CARD SALÃO */
-.card-dados-salao{
-    display: flex;
-    gap: 20px;
-    padding: 20px 80px;
-    margin: 40px 20px;
-    border-radius: 20px;
+/* LISTA AGENDAMENTOS */
+.titulo{
+    padding: 10px 100px;
 }
 
-.imagem-salao{
-    width: 340px;
-    border-radius: 12px;
-}
-
-.info-salao{
-    display:flex;
-    flex-direction: column;
-    font-size: 16px;
-}
-
-.info-salao p, .info-salao h2{
-    display: flex;
-    margin: 4px 0;
-    gap: 6px;
-    align-items: center;
-}
-
-.info-salao p{
-    color: #9d9ea6;
-}
-
-/* PÁGINA DOS PROFISSIONAIS */
-.pagina-profissionais{
-    height: 100vh;
+.lista-agendamentos{
     display: flex;
     flex-direction: column;
-    background: #f8f8f8;
-}
-
-/* BOTÃO VOLTAR PÁGINA */
-.topo-voltar {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    padding: 20px;
-    font-family: 'Inter', sans-serif;
-    font-size: 16px;
-    color: #1b1b1b;
-    cursor: pointer;
-}
-
-.topo-voltar svg {
-    transition: transform 0.2s ease; 
-}
-
-.topo-voltar:hover svg {
-    transform: translateX(-3px);
-}
-
-.topo-voltar span{
-    font-weight: 600;
-}
-
-/* CARDS PROFISSIONAIS */
-.card-profissional{
-    display: flex;
-    align-items: center;
+    padding: 10px 100px;
     gap: 12px;
-    padding: 8px;
+}
+
+.card-agendamento{
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    padding: 12px;
     background: #ffffff;
     border-radius: 20px;
     position: relative;
+    justify-content: space-between;
+    
 }
 
-.imagem-profissional{
-    width: 80px;
-    height: 80px;
+.imagem-salao{
+    width: 120px;
+    height: 100px;
     object-fit: cover;
     margin: 4px 10px 4px 10px;
     max-width: 100%;
     border-radius: 16px;
 }
 
-.info-profissional b{
+.info-salao b, .info-servico b, .info-datahora b{
     font-size: 16px;
 }
 
-.info-profissional p{
+.info-salao p, .info-servico p, .info-datahora p{
     display: flex;
     align-items: center;
     margin: 8px 0;
@@ -163,24 +114,22 @@ header {
     color: #888;
 }
 
-/* BOTÃO CONTINUAR */
-.continuar-profissional{
-    display: flex;
-    padding: 10px 100px;
-    gap: 12px;
+.info-servico{
+    
 }
 
-.botao-continuar-profissional{
-    width: 100%;
-    padding: 14px;
-    border-radius: 12px;
-    border: none;
-    background: #cfcfcf;
-    color: #ffffff;
-    font-weight: 500;
+
+
+.info-datahora{
+    
 }
 
-.botao-continuar-profissional.selecionado{
-    background: #403529;
-    cursor: pointer;
+.distancia-salao{
+    position: absolute;
+    font-size: 14px;
+    color: #777;
+    right: 15px;
+    top: 24px;
+    margin: 8px;
 }
+
