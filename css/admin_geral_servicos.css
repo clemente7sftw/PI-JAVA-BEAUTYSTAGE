@@ -139,10 +139,15 @@ header {
 }
 
 /* Títulos */
-.titulo_servicos {
+.titulo {
     display: flex;
     align-items: center;
     gap: 10px;
+}
+.titulo a{
+    text-decoration: none;
+    color: #000;
+    transition: color 0.3s ease;
 }
 
 /* Tabs Ativos/Inativos */
