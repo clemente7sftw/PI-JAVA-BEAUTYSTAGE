@@ -11,6 +11,29 @@
     <title>Salão</title>
 </head>
 <body>
+    <header>
+        <div class="grupo_esquerda">
+            <div class="item_header">
+                <img class="icones_header" src="../assets/icone_home.png" alt="">
+                <p>Home</p>
+            </div>
+
+            <div class="item_header">
+                <img class="icones_header" src="../assets/icone_agendamentos.png" alt="">
+                <p>Agendamentos</p>
+            </div>
+        </div>
+
+        <img class="logo_header" src="../assets/logo_empresas.png" alt="Logo">
+
+        <div class="grupo_direita">
+            <div class="item_header">
+                <img class="icones_header" src="../assets/icone_perfil.png" alt="">
+                <p>Perfil</p>
+            </div>
+        </div>
+    </header>
+
     <div class="card-dados-salao">
         <img src="../assets/foto-beauty-salon.jpg" alt="" class="imagem-salao">
         
@@ -57,9 +80,9 @@
             <span class="botao-adicionar"><button class="botao-agendar"><img src="../assets/icone-adicionar-preto.png" alt="" width="24px"></button></span>
         </div>
     </div>
-
+   
     <div class="continuar-agendamento">
-        <button class="botao-continuar">Continuar (2)</button>
+        <button class="botao-continuar">Continuar</button>
     </div>
 
     <div class="card-aviso">
@@ -78,14 +101,75 @@
 
 
     <style>
-        body{
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Inter', Arial, sans-serif;
-            font-size: 14px;
-            background: #fafafa;
-        }
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter';
+    font-size: 14px;
+    background: #fafafa;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 40px;
+    position: relative;
+    font-size: 15px;
+}
+
+.item_header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 3px;
+    cursor: pointer;
+}
+
+.item_header img {
+    width: 35px;
+    transition: filter 0.3s ease;
+}
+
+.item_header p {
+    color: #00000067;
+    transition: color 0.3s ease;
+}
+
+.grupo_esquerda,
+.grupo_direita {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.grupo_direita img {
+    width: 30px;
+}
+
+.grupo_esquerda .item_header:first-child p {
+    color: #235AFF;
+}
+
+.grupo_esquerda .item_header:first-child img,
+.item_header:hover img {
+    filter: brightness(0) saturate(100%) invert(37%) sepia(92%) saturate(749%)
+            hue-rotate(202deg) brightness(94%) contrast(101%);
+}
+
+.item_header:hover p {
+    color: #235AFF;
+}
+
+.logo_header {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 70px;
+}
 
         .card-dados-salao{
             display: flex;
@@ -181,7 +265,7 @@
             color: #777777;
             right: 8px;
             top: 20px;
-            margin: 8px;
+            margin: 8px;  
         }
 
         .botao-agendar{
@@ -199,7 +283,7 @@
             display: flex;
             width: 100%;
             color: #ffffff;
-            background: #403529;
+            background: #cccccc;
             border: none;
             padding: 12px;
             gap: 12px;
@@ -207,6 +291,11 @@
             border-radius: 16px;
             position: relative;
             justify-content: center;
+        }
+
+        .botao-continuar.selecionado{
+            background: #403529;
+            cursor: pointer;
         }
 
 

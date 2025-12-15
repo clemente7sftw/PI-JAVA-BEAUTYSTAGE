@@ -8,8 +8,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="../css/cliente_escolha.css">
-    <title>Escolha o profissional - Cliente</title>
+    <link rel="stylesheet" href="../css/cliente_datahora.css">
+    <title>Escolha a data e o horário - Cliente</title>
 </head>
 <body>
     <header>
@@ -35,39 +35,54 @@
         </div>
     </header>
 
-    <div class="pagina-profissionais">
+    <div class="pagina-horarios">
         <div class="topo-voltar">
             <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#1b1b1b" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
                 <polyline points="15 18 9 12 15 6"></polyline>
             </svg>
 
-            <span>Escolha um profissional</span>
+            <span>Data e Hora</span>
         </div>
 
-        <div class="lista-profissionais">
-            <div class="card-profissional">
-                <img src="../assets/icone-qualquer-profissional-azul.png" alt="" width="60px" class="imagem-qualquer-profissional">
+        <h3 class="titulo">Escolha a Data</h3>
+        <div class="lista-datas">
+            
+            <div class="card-data">
+                <div class="info-data">
+                    <p class="dia-semana">SEG</p>
 
-                <div class="info-profissional">
-                    <b class="nome-profissional">Qualquer Profissional</b>
+                    <b class="mes-dia">Dez 15</b>
                 
-                    <p class="cargo-profissional">próximo profissional bem avaliado</p>
+                    <p class="tempo-servico">40 min</p>
                 </div>
             </div>
         
-            <div class="card-profissional">
-                <img src="../assets/imagem-profissional-homem.jpg" alt="" class="imagem-profissional">
+            <div class="card-data">
+                <div class="info-data">
+                    <p><img src="../assets/icone_agendamentos.png" alt=""></p>
+                    <b class="">Mais datas</b>
+                </div>
+            </div>
+        </div>
 
-                <div class="info-profissional">
-                    <b class="nome-profissional">Caio Cardoso Barbosa</b>
-            
-                    <p class="cargo-profissional">Cabeleireiro</p>
+        <div class="lista-horas">
+            <h3>Escolha a Hora</h3>
+            <div class="card-hora">
+                <div class="info-hora">
+                    <b class="horario">09:00 AM</b>
+                    <span class="desconto">20% Off</span>
+                </div>
+            </div>
+        
+            <div class="card-hora">
+                <div class="info-hora">
+                    <b class="horario">10:00 AM</b>
                 </div>
             </div>
         </div>
     
-        <div class="continuar-profissional">
-            <button class="botao-continuar-profissional">Selecionar e continuar</button>
+        <div class="continuar-agendamento">
+            <button class="botao-confirmar">Confirmar Agendamento</button>
         </div>
     </div>
 </body>

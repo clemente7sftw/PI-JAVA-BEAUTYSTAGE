@@ -68,8 +68,8 @@ header {
     height: 70px;
 }
 
-/* PÁGINA DOS PROFISSIONAIS */
-.pagina-profissionais{
+/* PÁGINA DE HORÁRIOS */
+.pagina-horarios{
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -100,8 +100,19 @@ header {
     font-weight: 600;
 }
 
-/* CARDS PROFISSIONAIS */
-.lista-profissionais{
+/* CARDS HORÁRIOS */
+.titulo{
+    padding: 10px 100px;
+}
+
+.lista-datas{
+    display: flex; 
+    flex-direction: row;
+    padding: 10px 100px;
+    gap: 12px;
+}
+
+.lista-horas{
     flex: 1;
     overflow-y: auto;
     display: flex;
@@ -111,35 +122,49 @@ header {
     padding-bottom: 20px;
 }
 
-.card-profissional{
+.card-data{
     display: flex;
-    align-items: center;
+    width: 70px;
     gap: 12px;
     padding: 8px;
     background: #ffffff;
-    border-radius: 20px;
+    border-radius: 10px;
+    position: relative;
+    align-content: center;
+    text-align:center;
+    justify-content: center;
+}
+
+.card-hora{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 12px;
     position: relative;
 }
 
-.imagem-profissional{
-    width: 80px;
-    height: 80px;
-    object-fit: cover;
-    margin: 4px 10px 4px 10px;
-    max-width: 100%;
-    border-radius: 16px;
-}
-
-.info-profissional b{
+.info-data b, .info-hora b{
     font-size: 16px;
 }
 
-.info-profissional p{
+.info-data p{
     display: flex;
     align-items: center;
     margin: 8px 0;
     gap: 3px;
     color: #888;
+    justify-content: center;
+}
+
+.info-hora span{
+    position: absolute;
+    font-size: 14px;
+    color: #01a760;
+    right: 8px;
+    top: 12px;
+    margin: 8px;
 }
 
 .imagem-qualquer-profissional{
@@ -153,14 +178,14 @@ header {
     border-radius: 16px;
 }
 
-/* BOTÃO CONTINUAR */
-.continuar-profissional{
+/* BOTÃO CONFIRMAR */
+.continuar-agendamento{
     display: flex;
     padding: 10px 100px;
     gap: 12px;
 }
 
-.botao-continuar-profissional{
+.botao-confirmar{
     width: 100%;
     padding: 14px;
     border-radius: 12px;
@@ -170,7 +195,19 @@ header {
     font-weight: 500;
 }
 
-.botao-continuar-profissional.selecionado{
+.botao-confirmar.selecionado{
     background: #403529;
     cursor: pointer;
+}
+
+.card-data.clicado{
+    background: #f3f5fc;
+    border: solid 1px #235AFF;
+    color: #235AFF;
+}
+
+.card-hora.clicado{
+    background: #f3f5fc;
+    border: solid 1px #235AFF;
+    color: #235AFF; 
 }

@@ -68,6 +68,37 @@ header {
     height: 70px;
 }
 
+/* CARD SALÃO */
+.card-dados-salao{
+    display: flex;
+    gap: 20px;
+    padding: 20px 80px;
+    margin: 40px 20px;
+    border-radius: 20px;
+}
+
+.imagem-salao{
+    width: 340px;
+    border-radius: 12px;
+}
+
+.info-salao{
+    display:flex;
+    flex-direction: column;
+    font-size: 16px;
+}
+
+.info-salao p, .info-salao h2{
+    display: flex;
+    margin: 4px 0;
+    gap: 6px;
+    align-items: center;
+}
+
+.info-salao p{
+    color: #9d9ea6;
+}
+
 /* PÁGINA DOS PROFISSIONAIS */
 .pagina-profissionais{
     height: 100vh;
