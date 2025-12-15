@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BeautyStage | Profissionais</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/admin_geral_profissionais.css">
+    <link rel="icon" type="image/png" href="../assets/icone_empresas_logo.png">
+</head>
+<body>
+    <header>
+        <div class="grupo_esquerda">
+            <div class="item_header">
+                <img class="icones_header" src="../assets/icone_home.png" alt="">
+                <p>Home</p>
+            </div>
+
+            <div class="item_header">
+                <img class="icones_header" src="../assets/icone_agendamentos.png" alt="">
+                <p>Agendamentos</p>
+            </div>
+        </div>
+
+        <img class="logo_header" src="../assets/logo_empresas.png" alt="Logo">
+
+        <div class="grupo_direita">
+            <div class="item_header">
+                <img class="icones_header" src="../assets/icone_perfil.png" alt="">
+                <p>Perfil</p>
+            </div>
+        </div>
+    </header>  
+<nav class="nav_cruds">
+    <button><a href="admin_geral_agendamentos.html">Agendamentos</a></button>
+    <button><a href="admin_geral_clientes.html">Clientes</a></button>
+    <button class="ativo"><a href="admin_geral_profissionais.html">Profissionais</a></button>
+    <button><a href="admin_geral_cargos.html">Cargos</a></button>
+    <button> <a href="admin_geral_servicos.html">Serviços</a>
+    </button>
+</nav>    
+    <div class="titulo">
+        <h3><a href="admin_geral_home.html">‹ Profissionais</a></h3>
+        <a href="admin_geral_add_cargos.html"><img class="icone_add" src="../assets/icone_adicionar.png" alt=""></a>
+    </div>  
+    <div class="atv_int">
+        <p class="tab active" data-tab="ativos">Ativos</p>
+        <p class="tab" data-tab="inativos">Inativos</p>
+    </div>
+
+    <section class="profissionais_cards">
+        <div class="card_profissional">
+            <img src="../assets/icone_sem_foto.png" alt="">
+            <div>
+                <p>Nome do Profissional</p>
+                <p>email</p>
+                <p>cargos, cargos</p>
+                <p>Cadastrado em:</p>
+                <button>Desativar</button>
+            </div>
+        </div>
+        <div class="card_profissional">
+            <img src="../assets/icone_sem_foto.png" alt="">
+            <div>
+                <p>Nome do Profissional</p>
+                <p>email</p>
+                <p>cargos, cargos</p>
+                <p>Cadastrado em:</p>
+                <button>Desativar</button>
+            </div>
+        </div>
+    </section>
+    <script src="../js/admin_geral_profissionais.js"></script>
+</body>
+
+</html>

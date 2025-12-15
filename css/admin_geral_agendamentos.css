@@ -210,14 +210,14 @@ section button {
     cursor: pointer;
 }
 
-/* Cards de serviços */
-.servicos_cards {
+/* Cards de agendamentos */
+.agendamentos_cards {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
-.card_servico {
+.card_agendamento {
     display: flex;
     align-items: center;
     gap: 10px;
@@ -226,20 +226,20 @@ section button {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.103);
 }
 
-.card_servico img {
+.card_agendamento img {
     width: 50px;
 }
 
-.card_servico p {
+.card_agendamento p {
     margin: 0;
     color: #00000065;
 }
 
-.card_servico p:first-of-type {
+.card_agendamento p:first-of-type {
     color: #000000;
 }
 
-.card_servico div {
+.card_agendamento div {
     display: flex;
     flex-direction: column;
 }
