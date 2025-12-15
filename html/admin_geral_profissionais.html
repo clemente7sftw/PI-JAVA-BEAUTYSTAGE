@@ -1,20 +1,15 @@
 <!DOCTYPE html>
 <html lang="pt">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BeautyStage | Serviços</title>
+    <title>BeautyStage | Profissionais</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="../css/admin_geral_add_servicos.css">
+    <link rel="stylesheet" href="../css/admin_geral_profissionais.css">
     <link rel="icon" type="image/png" href="../assets/icone_empresas_logo.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap"
-     rel="stylesheet">
 </head>
 <body>
     <header>
@@ -38,19 +33,14 @@
                 <p>Perfil</p>
             </div>
         </div>
- </header>      
-<main>
-    <form action="" method="post" enctype="multipart/form-data">
-        <label for="nome_servico">Nome do Serviço:</label> 
-        <input type="text" id="nome_servico" name="nome_servico">
-        <label for="duracao_servico">Duração:</label>
-        <input type="text" id="duracao_servico" name="duracao_servico">
-        <label for="preco_servico">Preço:</label>
-        <input type="text" id="preco_servico" name="preco_servico">
-        <input type="file" class="file_label " id="imagem_servico" name="imagem_servico" accept="image/*">
-        <button class="btn_voltar">Voltar</button><button type="submit" class="btn_cad">Adicionar Serviço</button>
-    </form>
-</main>
-    
+    </header>  
+<nav class="nav_cruds">
+    <button><a href="admin_geral_agendamentos.html">Agendamentos</a></button>
+    <button><a href="admin_geral_clientes.html">Clientes</a></button>
+    <button class="ativo"><a href="admin_geral_profissionais.html">Profissionais</a></button>
+    <button><a href="admin_geral_cargos.html">Cargos</a></button>
+    <button> <a href="admin_geral_servicos.html">Serviços</a>
+    </button>
+</nav>    
 </body>
 </html>

@@ -4,12 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BeautyStage | Serviços</title>
+    <title>BeautyStage | Profissionais</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="../css/admin_geral_add_servicos.css">
+    <link rel="stylesheet" href="../css/admin_geral_add_cargos.css">
     <link rel="icon" type="image/png" href="../assets/icone_empresas_logo.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -41,14 +41,20 @@
  </header>      
 <main>
     <form action="" method="post" enctype="multipart/form-data">
-        <label for="nome_servico">Nome do Serviço:</label> 
-        <input type="text" id="nome_servico" name="nome_servico">
-        <label for="duracao_servico">Duração:</label>
-        <input type="text" id="duracao_servico" name="duracao_servico">
-        <label for="preco_servico">Preço:</label>
-        <input type="text" id="preco_servico" name="preco_servico">
-        <input type="file" class="file_label " id="imagem_servico" name="imagem_servico" accept="image/*">
-        <button class="btn_voltar">Voltar</button><button type="submit" class="btn_cad">Adicionar Serviço</button>
+        <label for="nome_profissional">Nome:</label> 
+        <input type="text" id="nome_profissional" name="nome_profissional">
+        <label for="email_profissional">Email:</label> 
+        <input type="text" id="email_profissional" name="email_profissional">
+        <label for="cargo_profissionais">Cargos:</label>
+        <label>
+        <input type="checkbox" name="opcao1">
+        Opção 1
+        </label>
+        <label>
+        <input type="checkbox" name="opcao2">
+        Opção 2
+        </label> 
+        <button class="btn_voltar">Voltar</button><button type="submit" class="btn_cad">Adicionar Profissional</button>
     </form>
 </main>
     
