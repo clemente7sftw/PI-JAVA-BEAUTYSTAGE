@@ -1,0 +1,240 @@
+* {
+    font-family: "Inter Tight", sans-serif;
+}
+
+body {
+    background-color: #FFFFFF;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 40px;
+    position: relative;
+    font-size: 15px;
+}
+header a{
+    text-decoration: none;
+}
+.item_header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 3px;
+    cursor: pointer;
+}
+
+.item_header img {
+    width: 35px;
+    transition: filter 0.3s ease;
+}
+
+.item_header p {
+    color: #00000067;
+    transition: color 0.3s ease;
+}
+
+.grupo_esquerda,
+.grupo_direita {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.grupo_direita img {
+    width: 30px;
+}
+
+.item_header:hover img {
+    filter: brightness(0) saturate(100%) invert(37%) sepia(92%) saturate(749%)
+            hue-rotate(202deg) brightness(94%) contrast(101%);
+}
+
+.grupo_esquerda .item_header:first-child:hover .icones_header {
+    filter: brightness(0) saturate(100%) invert(37%) sepia(92%) saturate(749%)
+            hue-rotate(202deg) brightness(94%) contrast(101%);
+    opacity: 1;
+}
+
+.grupo_esquerda .item_header:first-child .icones_header {
+    filter: brightness(0);
+    opacity: 0.45; 
+}
+
+.item_header:hover p {
+    color: #235AFF;
+}
+
+.logo_header {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 70px;
+}
+
+/* NAV CRUDS */
+.nav_cruds {
+    margin-top: 45px;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.nav_cruds a {
+    text-decoration: none;
+    color: #00000079;
+    transition: all 0.3s ease;
+}
+
+.nav_cruds a:hover {
+    color: #235AFF;
+}
+
+.nav_cruds button {
+    color: #00000079;
+    height: 35px;
+    border: 0.5px solid #ffffff;
+    border-radius: 6px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.103);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+
+.nav_cruds button:hover {
+    color: #235AFF;
+    border-color: #235AFF;
+}
+.nav_cruds button {
+    color: #00000079;
+    border: 0.5px solid #ffffff;
+}
+
+.nav_cruds button a {
+    color: inherit;
+}
+
+.nav_cruds button.ativo {
+    color: #235AFF;
+    border-color: #235AFF;
+}
+
+.nav_cruds button.ativo a {
+    color: #235AFF;
+}
+
+
+.btn_servicos {
+    color: #235AFF !important;
+    border-color: #235AFF !important;
+}
+
+/* Títulos */
+.titulo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.titulo a{
+    text-decoration: none;
+    color: #000;
+    transition: color 0.3s ease;
+}
+
+/* Tabs Ativos/Inativos */
+.atv_int {
+    display: flex;
+    gap: 20px;
+    position: relative;
+    border-bottom: 2px solid #ddd;
+    width: max-content;
+    padding-bottom: 5px;
+}
+
+.atv_int p {
+    cursor: pointer;
+    padding: 5px 0;
+    position: relative;
+    color: #555;
+    transition: color 0.3s ease;
+}
+
+.atv_int p.active {
+    color: #007bff;
+    font-weight: 600;
+}
+
+.atv_int p.active::after {
+    content: "";
+    position: absolute;
+    bottom: -7px;
+    left: 0;
+    width: 100%;
+    height: 3px;
+    background: #007bff;
+    border-radius: 4px;
+    animation: slide 0.3s ease;
+}
+
+@keyframes slide {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+/* Botões gerais da página */
+section button {
+    color: #000000;
+    height: 35px;
+    border: 0.5px solid #000000;
+    border-radius: 6px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.103);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icone_add {
+    width: 20px;
+    cursor: pointer;
+}
+
+/* Cards de serviços */
+.admin_cards {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.card_admin {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.103);
+}
+
+.card_admin img {
+    width: 50px;
+}
+
+.card_admin p {
+    margin: 0;
+    color: #00000065;
+}
+
+.card_admin p:first-of-type {
+    color: #000000;
+}
+
+.card_admin div {
+    display: flex;
+    flex-direction: column;
+}

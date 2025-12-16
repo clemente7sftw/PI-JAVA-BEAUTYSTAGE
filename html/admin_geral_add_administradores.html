@@ -1,15 +1,20 @@
 <!DOCTYPE html>
 <html lang="pt">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BeautyStage | Clientes</title>
+    <title>BeautyStage | Administradores</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="../css/admin_geral_clientes.css">
+    <link rel="stylesheet" href="../css/admin_geral_add_administradores.css">
     <link rel="icon" type="image/png" href="../assets/icone_empresas_logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap"
+     rel="stylesheet">
 </head>
 <body>
     <header>
@@ -35,40 +40,19 @@
                 <a href="admin_geral_perfil.html"> <img class="icones_header" src="../assets/icone_perfil.png" alt="">
                     <p>Perfil</p>
                 </a>
-            </div>
+            </div> 
         </div>
     </header> 
-<nav class="nav_cruds">
-    <button><a href="admin_geral_agendamentos.html">Agendamentos</a></button>
-    <button class="ativo"><a href="admin_geral_clientes.html">Clientes</a></button>
-    <button><a href="admin_geral_profissionais.html">Profissionais</a></button>
-    <button><a href="admin_geral_cargos.html">Cargos</a></button>
-    <button> <a href="admin_geral_servicos.html">Serviços</a>
-    <button><a href="admin_geral_administradores.html">Administradores</a></button>
-    </button>
-</nav>    
-    <div class="titulo">
-        <h3><a href="admin_geral_home.html">‹ Clientes</a></h3>
-        <a href="admin_geral_add_clientes.html"><img class="icone_add" src="../assets/icone_adicionar.png" alt=""></a>
-    </div>  
-    <div class="atv_int">
-        <p class="tab active" data-tab="ativos">Ativos</p>
-        <p class="tab" data-tab="inativos">Inativos</p>
-    </div>
+<main>
+    <form action="" method="post" enctype="multipart/form-data">
+        <label for="nome_admin">Nome:</label> 
+        <input type="text" id="nome_admin" name="nome_admin">
+        <label for="email_admin">Email:</label> 
+        <input type="text" id="email_admin" name="email_admin">
+        <button class="btn_voltar"><a href="admin_geral_administradores.html">Voltar</a></button><button class="btn_cad" id="btnAdmin" type="button">Salvar</button>
 
-    <section class="clientes_cards">
-        <div class="card_cliente">
-            <img src="../assets/icone_sem_foto.png" alt="">
-            <div>
-                <p>Nome do Cliente</p>
-                <p>email</p>
-                <p>telefone</p>
-                <p>Cadastrado em:</p>
-                <button>Desativar</button>
-            </div>
-        </div>
-    </section>
-    <script src="../js/admin_geral_clientes.js"></script>
+    </form>
+    <script src="../js/admin_geral_add_administradores.js"></script>
+</main>     
 </body>
-
 </html>
