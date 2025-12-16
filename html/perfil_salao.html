@@ -78,6 +78,7 @@
             </div>
 
             <span class="botao-adicionar"><button class="botao-agendar"><img src="../assets/icone-adicionar-preto.png" alt="" width="24px"></button></span>
+
         </div>
     </div>
    
@@ -96,7 +97,9 @@
             <p>Faça login para prosseguir.</p>
             <br>
         </div>
-        <button class="botao-login">Ir para o login</button>
+        <div class="botao">
+            <button class="botao-login">Ir para o login</button>
+        </div>
     </div>
 
 
@@ -171,176 +174,195 @@ header {
     height: 70px;
 }
 
-        .card-dados-salao{
-            display: flex;
-            gap: 20px;
-            padding: 20px 80px;
-            margin: 40px 20px;
-            border-radius: 20px;
-        }
+.card-dados-salao{
+    display: flex;
+    gap: 20px;
+    padding: 20px 80px;
+    margin: 40px 20px;
+    border-radius: 20px;
+}
 
-        .imagem-salao{
-            width: 340px;
-            border-radius: 12px;
-        }
+.imagem-salao{
+    width: 340px;
+    border-radius: 12px;
+}
 
-        .info-salao{
-            display:flex;
-            flex-direction: column;
-            font-size: 16px;
-        }
+.info-salao{
+    display:flex;
+    flex-direction: column;
+    font-size: 16px;
+}
 
-        .info-salao p, .info-salao h2{
-            display: flex;
-            margin: 4px 0;
-            gap: 6px;
-            align-items: center;
-        }
+.info-salao p, .info-salao h2{
+    display: flex;
+    margin: 4px 0;
+    gap: 6px;
+    align-items: center;
+}
 
-        .info-salao p{
-            color: #9d9ea6;
-        }
+.info-salao p{
+    color: #9d9ea6;
+}
 
-        .tags-servicos{
-            display: flex;
-            flex-wrap: wrap;
-            padding: 0 100px;
-            gap: 20px;
-        }
+.tags-servicos{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 100px;
+    gap: 20px;
+}
 
-        .tag-servico{
-            display: flex;
-            text-align: center;
-            align-items: center;
-            cursor: pointer; 
-            padding: 5px;
-            gap: 2px;
-            color:#4e4e4e;
-            background: #fafafa;
-            border: none;
-        }
+.tag-servico{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    cursor: pointer; 
+    padding: 5px;
+    gap: 2px;
+    color:#4e4e4e;
+    background: #fafafa;
+    border: none;
+}
 
-        .tag-servico.ativo{
-            color: #222222;
-            font-weight: 600;
-        }
+.tag-servico.ativo{
+    color: #222222;
+    font-weight: 600;
+}
 
-        .lista-servicos{
-            display: flex;
-            flex-direction: column;
-            padding: 10px 100px;
-            gap: 12px;
-        }
+.lista-servicos{
+    display: flex;
+    flex-direction: column;
+    padding: 10px 100px;
+    gap: 12px;
+}
 
-        .card-servico{
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            padding: 12px;
-            background: #ffffff;
-            border-radius: 20px;
-            position: relative;
-        }
+.card-servico{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 12px;
+    background: #ffffff;
+    border-radius: 20px;
+    position: relative;
+}
 
-        .info-servico b{
-            font-size: 16px;
-        }
+.info-servico b{
+    font-size: 16px;
+}
 
-        .info-servico2 {
-            display: flex;
-            gap: 20px;
-        }
+.info-servico2 {
+    display: flex;
+    gap: 20px;
+}
 
-        .info-servico p{
-            display: flex;
-            align-items: center;
-            margin: 8px 0;
-            gap: 3px;
-            color: #888888;
-        }
+.info-servico p{
+    display: flex;
+    align-items: center;
+    margin: 8px 0;
+    gap: 3px;
+    color: #888888;
+}
 
-        .botao-adicionar{
-            position: absolute;
-            font-size: 14px;
-            color: #777777;
-            right: 8px;
-            top: 20px;
-            margin: 8px;  
-        }
+.botao-adicionar{
+    position: absolute;
+    font-size: 14px;
+    color: #777777;
+    right: 8px;
+    top: 20px;
+    margin: 8px;  
+}
 
-        .botao-agendar{
-            border: none;
-            background-color:#ffffff;
-        }
+.botao-agendar{
+    /* background-image: url(../assets/icone-adicionar-preto.png);
+    background-repeat: no-repeat;
+    background-size:cover; */
+    border: none;
+    background-color:#ffffff;
+}
 
-        .continuar-agendamento{
-            display: flex;
-            padding: 10px 100px;
-            gap: 12px;
-        }
+/* Botão de agendar deve mudar de ícone quando selecionado (só pode ter uma seleção por vez) */
+/* .botao-agendar:hover{
+    background-image: url('../assets/icone-adicionado-azul.png');
+    background-repeat: no-repeat;
+    background-size:contain;
+} */
 
-        .botao-continuar{
-            display: flex;
-            width: 100%;
-            color: #ffffff;
-            background: #cccccc;
-            border: none;
-            padding: 12px;
-            gap: 12px;
-            align-items: center;
-            border-radius: 16px;
-            position: relative;
-            justify-content: center;
-        }
+.continuar-agendamento{
+    display: flex;
+    padding: 10px 100px;
+    gap: 12px;
+}
 
-        .botao-continuar.selecionado{
-            background: #403529;
-            cursor: pointer;
-        }
+.botao-continuar{
+    display: flex;
+    width: 100%;
+    color: #403529;
+    background: #cccccc;
+    border: none;
+    padding: 12px;
+    gap: 12px;
+    align-items: center;
+    border-radius: 16px;
+    position: relative;
+    justify-content: center;
+}
+
+.botao-continuar:hover{
+    background: #403529;
+    color: #ffffff;
+    cursor: pointer;
+}
 
 
 /* AVISO DE CONVIDADO */
-        .card-aviso{
-            display:none;
-            background: #ffffff;
-            padding: 20px;
-            border-radius: 20px;
-            margin-left: 120px;
-            margin-right: 120px;
-            font-size: 20px;
-            font-weight: 600;
-            text-align: center;
-        }
+.card-aviso{
+    display:none;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 20px;
+    margin-left: 30%;
+    margin-right: 30%;
+    position: absolute;
+    top: 28%;
+    font-size: 20px;
+    font-weight: 600;
+    box-shadow: 10px 12px 2px -4px rgba(0, 0, 0, 0.15);
+    /* text-align: center; */
+}
 
-        .icones-aviso{
-            display: flex;
-            justify-content: space-between;
-        }
+.icones-aviso{
+    display: flex;
+    justify-content: space-between;
+}
 
-        .botao-fechar{
-            background: transparent;
-            border: none;
-            /* margin-left: 460px; */
-            /* position: absolute; */
-            right: 140px;
-            margin-top: 5px;
-        }
+.botao-fechar{
+    background: transparent;
+    border: none;
+    /* margin-left: 460px; */
+    /* position: absolute; */
+    right: 140px;
+    margin-top: 5px;
+}
 
-        .texto-aviso{
-            justify-items: center;
-        }
+.texto-aviso{
+    margin: 40px;
+}
 
-        .botao-login{
-            background: #1d3050;
-            color: #ffffff;
-            padding: 16px;
-            width: 180px;
-            border: none;
-            border-radius: 16px;
-            font-size: 16px;
-            display: flex;
-            justify-content: center;
-        }
+.botao{
+    display: flex;
+    justify-content: center;
+}
+
+.botao-login{
+    display: flex;
+    background: #1d3050;
+    color: #ffffff;
+    padding: 16px;
+    width: 180px;
+    border: none;
+    border-radius: 16px;
+    font-size: 16px;
+    justify-content: center;
+}
 
 /* NAV SERVIÇOS */
 .nav-servicos{

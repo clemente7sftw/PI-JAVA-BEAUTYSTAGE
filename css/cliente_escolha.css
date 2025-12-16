@@ -121,6 +121,12 @@ header {
     position: relative;
 }
 
+.card-profissional:hover{
+    color: #235AFF;
+    border: solid 1px #235AFF;
+    background: #f3f5fc;
+}
+
 .imagem-profissional{
     width: 80px;
     height: 80px;
@@ -170,7 +176,12 @@ header {
     font-weight: 500;
 }
 
-.botao-continuar-profissional.selecionado{
+.botao-continuar-profissional:enabled{
+    background: #635a52;
+}
+
+.botao-continuar-profissional:enabled:hover{
     background: #403529;
     cursor: pointer;
 }
+

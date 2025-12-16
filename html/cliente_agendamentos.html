@@ -38,8 +38,10 @@
     <h3 class="titulo">Seus agendamentos</h3>
     <div class="lista-agendamentos">
         <div class="card-agendamento">
-            <img src="../assets/foto-beauty-salon.jpg" alt="" class="imagem-salao">
-
+            <div class="salao">
+                <img src="../assets/foto-beauty-salon.jpg" alt="" class="imagem-salao">
+            
+            <!-- <div class="info-agendamento"> -->
             <div class="info-salao">
                 <b class="nome-salao">Nome Salão</b>
             
@@ -47,7 +49,7 @@
             
                 <p class="avaliacao-salao"><img src="../assets/icone-estrela.png" alt="" width="15px">&nbsp; Avaliação</p>
             </div>
-
+            </div>
             <div class="info-servico">
                 <b>Corte de Cabelo</b>
                 
@@ -61,8 +63,28 @@
                 <p>09:00 AM</p>
                 <p>Profissional</p>
             </div>
+            <!-- </div> -->
+            <div>
+                <button class="botao-cancelar">Cancelar</button>
+            </div>
+        </div>
+    </div>
 
-            <!-- <span class="distancia-salao">2km</span> -->
+
+    <div class="card-aviso">
+        <div class="icones-aviso">
+            <img src="../assets/icone-alerta-azul.png" alt="" width="52px" class="icone-alerta">
+            <button class="botao-fechar"><img src="../assets/icone-fechar-azul.png" alt="" width="24px" class="icone-fechar"></button>
+        </div>
+        <div class="texto-aviso">
+            <p>Tem certeza de que deseja cancelar o agendamento?</p>
+            <br>
+            <p>O cancelamento deve ser feito no mínimo 24 horas antes do horário agendado. Caso queira cancelar depois do prazo mínimo, não haverá reembolso.</p>
+            <br>
+        </div>
+        <div class="botoes">
+            <button class="botao-confirmar">Confirmar cancelamento</button>
+            <button class="botao-voltar">Voltar aos agendamentos</button>
         </div>
     </div>
 </html>

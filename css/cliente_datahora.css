@@ -193,21 +193,28 @@ header {
     background: #cfcfcf;
     color: #ffffff;
     font-weight: 500;
+    cursor: not-allowed;
 }
 
-.botao-confirmar.selecionado{
+.botao-confirmar:enabled{
+    background: #635a52;
+}
+
+.botao-confirmar:enabled:hover{
     background: #403529;
     cursor: pointer;
 }
 
-.card-data.clicado{
+.card-data:hover, .card-hora:hover{
     background: #f3f5fc;
     border: solid 1px #235AFF;
     color: #235AFF;
+    cursor: pointer;
 }
 
-.card-hora.clicado{
+.card-data.ativo,.card-hora.ativo{
     background: #f3f5fc;
     border: solid 1px #235AFF;
     color: #235AFF; 
+    font-weight: 600;
 }

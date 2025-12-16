@@ -9,7 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="../css/cliente_conf_agendamento.css">
-    <title>Salão</title>
+    <title>Detalhes para o pagamento - Cliente</title>
 </head>
 <body>
     <header>
@@ -55,33 +55,34 @@
 
     <div class="confirmacao-agendamento">
         <h3>Detalhes do agedamento</h3>
-        <div class="card-agendamento">
+        <div class="info-agendamento">
             <b class="subtitulo">Data</b>
             <p>Seg, Dez 15 às 09:00 AM</p>
 
             <b class="subtitulo">Profissional</b>
             <p>Caio Cardoso Barbosa - 40 min</p>
         </div>
-        
+
+        <h3>Pagamento</h3>
         <div class="card-pagamento">
-            <h3>Pagamento</h3>
+            
             <div class="info-pagamento">
                 <div>
                     <p class="subtitulo">Pague Online Agora</p>
-                    <p>Pagamento instantâneo</p>
+                    <p class="texto">Pagamento instantâneo</p>
                 </div>
                 <span class="seleciona-pagamento"><input type="radio" name="tipo-pagamento"></span>
             </div>
             <div class="info-pagamento">
                 <div>
                     <p class="subtitulo">Pague no salão</p>
-                    <p>Faça o pagamento após o agendamento</p>
+                    <p class="texto">Faça o pagamento após o agendamento</p>
                 </div>
                 <span class="seleciona-pagamento"><input type="radio" name="tipo-pagamento"></span>
             </div>
         </div>
 
-        <h3>Preço</h3>
+        <h3>Preço dos serviços</h3>
         <div class="lista-servicos">
             <div class="info-servico">
                 <p class="servico">Corte de cabelo</p>
@@ -95,200 +96,37 @@
     </div>
 
     <div class="continuar-agendamento">
-        <button class="botao-continuar">Continuar</button>
+        <button class="botao-continuar" disabled>Continuar</button>
     </div>
 
-<style>
-    .confirmacao-agendamento{
-        display: flex;
-        flex-direction: column;
-        padding: 10px 100px;
-        gap: 2px;
-        padding-bottom: 24px;  
-    }
+    <script>
+        // const radios = document.querySelectorAll('input[name="tipo-pagamento"]');
+        // const botaoContinuar = document.querySelector(".botao-continuar");
 
-    .subtitulo{
-        font-size: 15px;
-        font-weight: 600;
-    }
+        // radios.forEach(radio => {
+        //     radio.addEventListener('change', () => {
+        //         botaoContinuar.disabled = true;
 
-    .card-agendamento{
-        display: flex;
-        flex-direction: column;
-        gap: 6px;
-        padding: 8px;
-        position: relative;
-    }
+        //         radios.forEach(r => {
+        //             if (r.checked){
+        //                 botaoContinuar.disabled = false;
+        //             }
+        //         });
+        //     });
+        // });
 
-    .card-agendamento p{
-        color:#777777
-    }
+        const radios = document.querySelectorAll('input[name="tipo-pagamento"]');
+        const botaoContinuar = document.querySelector(".botao-continuar");
 
-    .info-pagamento{
-        display: flex;
-        flex-direction: row;
-        width: 100%;
-        max-width:800px;
-        padding: 12px;
-        gap: 20;
-        position: relative;
-    }
-
-    .seleciona-pagamento{
-        font-size: 14px;
-        color: #777777;
-        right: 8px;
-        margin: 28px 120px;
-        display: flex;
-        align-items: flex-start;
-        gap: 12px;            
-        max-width: 420px;        
-        width: 100%;
-        cursor: pointer;  
-    }
-
-    .info-servico{
-        display: flex;
-        gap: 120px;
-    }
-
-    .valor-total{
-        display: flex;
-        gap: 180px;
-        margin-top: 24px;
-        font-size: 16px;
-    }
-
-    .continuar-agendamento{
-        display: flex;
-        padding: 10px 100px;
-        gap: 12px;
-    }
-
-    .botao-continuar{
-        display: flex;
-        width: 100%;
-        max-width: 500px;
-        color: #ffffff;
-        background: #cccccc;
-        border: none;
-        padding: 14px;
-        gap: 12px;
-        align-items: center;
-        border-radius: 8px;
-        position: relative;
-        justify-content: center;
-    }
-
-    .botao-continuar:hover{
-        background: #403529;
-        cursor: pointer;
-    }
-
-    /* .lista-servicos{
-        display: flex;
-        flex-direction: column;
-        padding: 10px 100px;
-        gap: 12px;
-    } */
-
-
-</style>
-
-<!-- <style>
-        .lista-servicos{
-            display: flex;
-            flex-direction: column;
-            padding: 10px 100px;
-            gap: 12px;
+        function verificarSelecao() {
+            const algumSelecionado = Array.from(radios).some(r => r.checked);
+            botaoContinuar.disabled = !algumSelecionado;
         }
 
-        .card-servico{
-            display: flex;
-            align-items: center;
-            gap: 12px;
-            padding: 12px;
-            background: #ffffff;
-            border-radius: 20px;
-            position: relative;
-        }
+        radios.forEach(radio => {
+            radio.addEventListener('change', verificarSelecao);
+        });
 
-        .info-servico b{
-            font-size: 16px;
-        }
-
-        .info-servico2 {
-            display: flex;
-            gap: 20px;
-        }
-
-        .info-servico p{
-            display: flex;
-            align-items: center;
-            margin: 8px 0;
-            gap: 3px;
-            color: #888888;
-        }
-
-        .botao-adicionar{
-            position: absolute;
-            font-size: 14px;
-            color: #777777;
-            right: 8px;
-            top: 20px;
-            margin: 8px;
-            
-        }
-
-        .botao-agendar{
-            border: none;
-            background-color:#ffffff;
-        }
-
-        .continuar-agendamento{
-            display: flex;
-            padding: 10px 100px;
-            gap: 12px;
-        }
-
-        .botao-continuar{
-            display: flex;
-            width: 100%;
-            color: #ffffff;
-            background: #cccccc;
-            border: none;
-            padding: 12px;
-            gap: 12px;
-            align-items: center;
-            border-radius: 16px;
-            position: relative;
-            justify-content: center;
-        }
-
-        .botao-continuar.selecionado{
-            background: #403529;
-            cursor: pointer;
-        }
-
-
-</style> -->
-
-
-
-    <!-- <div class="lista-servicos">
-        <div class="card-servico">
-            <div class="info-servico">
-                <b class="nome-servico">Corte de cabelo</b>
-                <div class="info-servico2">
-                    <p class="preco-servico">$40.00</p>
-            
-                    <p class="duracao-servico"><img src="../assets/icone-relogio-duracao-cinza.png" alt="" width="12px">30 min</p>
-                </div>
-            </div>
-
-            <span class="botao-adicionar"><button class="botao-agendar"><img src="../assets/icone-adicionar-preto.png" alt="" width="24px"></button></span>
-        </div>
-    </div> -->
-
+    </script>
 </body>
 </html>

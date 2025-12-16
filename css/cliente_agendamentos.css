@@ -87,10 +87,10 @@ header {
     gap: 24px;
     padding: 12px;
     background: #ffffff;
-    border-radius: 20px;
+    border-radius: 16px;
     position: relative;
+    flex-wrap: wrap;
     justify-content: space-between;
-    
 }
 
 .imagem-salao{
@@ -100,6 +100,26 @@ header {
     margin: 4px 10px 4px 10px;
     max-width: 100%;
     border-radius: 16px;
+    position:static;
+}
+
+/* .info-agendamento{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 24px;
+    align-items: center;
+} */
+
+.salao{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 24px;
+}
+.info-salao{
+    align-items: center;
+    justify-content: center;
 }
 
 .info-salao b, .info-servico b, .info-datahora b{
@@ -114,22 +134,76 @@ header {
     color: #888;
 }
 
-.info-servico{
-    
-}
-
-
-
 .info-datahora{
+    margin-right: 24px;
+}
+
+/* AVISO DE CANCELAMENTO */
+.botao-cancelar{
+    background: #cfcfcf;
+    color: #ffffff;
+    border: none;
+    padding: 14px;
+    border-radius: 12px;
+    margin: 24px;
     
 }
 
-.distancia-salao{
-    position: absolute;
-    font-size: 14px;
-    color: #777;
-    right: 15px;
-    top: 24px;
-    margin: 8px;
+.botao-cancelar:hover{
+    background: #403529;
+    color: white;
+    cursor: pointer;
 }
 
+.card-aviso{
+    display:none;
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 20px;
+    margin-left: 120px;
+    margin-right: 120px;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.icones-aviso{
+    display: flex;
+    justify-content: space-between;
+}
+
+.botao-fechar{
+    background: transparent;
+    border: none;
+    /* margin-left: 460px; */
+    /* position: absolute; */
+    right: 140px;
+    margin-top: 5px;
+}
+
+.texto-aviso{
+    justify-items: center;
+}
+
+.botoes{
+    display: flex;
+    gap: 40px;
+    justify-content: center;
+}
+
+.botao-confirmar, .botao-voltar{
+    background: #838d9e;
+    color: #ffffff;
+    padding: 14px;
+    width: 180px;
+    border: none;
+    border-radius: 16px;
+    font-size: 16px;
+    display: flex;
+    justify-content: center;
+}
+
+.botao-confirmar:hover, .botao-voltar:hover{
+    background: #1d3050;
+    cursor: pointer;
+}
