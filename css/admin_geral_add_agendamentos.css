@@ -65,6 +65,9 @@ header a{
 .item_header:hover p {
     color: #235AFF;
 }
+.ativo{
+    color: #235AFF;
+}
 
 .logo_header {
     position: absolute;
@@ -72,50 +75,12 @@ header a{
     transform: translateX(-50%);
     height: 70px;
 }
-
-main {
-    display: flex;
-    justify-content: center; 
-    align-items: center;     
-    margin-top: 100px;         
+.item_header.ativo p {
+    color: #235AFF;
 }
-form {
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    width: 200px;
 
-    margin: 30px;
-    padding: 20px; 
-    box-shadow: 0px 4px 10px #0000000D;
-    border-radius: 10px; 
-    input{
-        border-radius: 10px;
-        border-style: solid;
-        border-width: 0.5px;
-        height: 20px;
-    }
-    button{
-        border-radius: 10px;
-        height: 30px;
-        border-style: solid;
-        border-width: 0.5px;
-        cursor: pointer;
-    }
-    .btn_voltar{
-        background-color: transparent;
-        border-color: #235AFF;
-        color: #235AFF;
-        }
-    .btn_cad{
-        background-color: #235AFF;
-        border-color: #235AFF;
-        color: white;
-        }
-    }
-
-.file_label {
-border-style: none;
-border-radius: 0px;
-cursor: pointer;
+.item_header.ativo img {
+    filter: brightness(0) saturate(100%) invert(37%) sepia(92%) saturate(749%)
+            hue-rotate(202deg) brightness(94%) contrast(101%);
+    opacity: 1;
 }

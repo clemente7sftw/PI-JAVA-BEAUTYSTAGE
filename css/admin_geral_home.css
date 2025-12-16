@@ -15,6 +15,9 @@ header {
     position: relative;
     font-size: 15px;
 }
+header a {
+    text-decoration: none;
+}
 
 .item_header {
     display: flex;

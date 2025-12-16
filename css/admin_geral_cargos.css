@@ -6,7 +6,6 @@ body {
     background-color: #FFFFFF;
 }
 
-/* HEADER */
 header {
     display: flex;
     align-items: center;
@@ -15,13 +14,9 @@ header {
     position: relative;
     font-size: 15px;
 }
-
-.grupo_esquerda .item_header:first-child .icones_header {
-    filter: brightness(0) saturate(100%) invert(74%) sepia(0%) saturate(0%)
-            hue-rotate(180deg) brightness(90%) contrast(90%);
+header a{
+    text-decoration: none;
 }
-
-/* Estrutura dos itens */
 .item_header {
     display: flex;
     flex-direction: column;
@@ -41,7 +36,6 @@ header {
     transition: color 0.3s ease;
 }
 
-/* Grupos do header */
 .grupo_esquerda,
 .grupo_direita {
     display: flex;
@@ -53,24 +47,24 @@ header {
     width: 30px;
 }
 
-/* Texto do Home sem hover */
-.grupo_esquerda .item_header:first-child p {
-    color: #00000079;
-}
-
-/* Hover geral dos itens */
-.item_header:hover p {
-    color: #235AFF;
-}
-
-/* Hover do Home → texto + imagem */
-.item_header:first-child:hover p {
-    color: #235AFF;
-}
-
-.item_header:first-child:hover img {
+.item_header:hover img {
     filter: brightness(0) saturate(100%) invert(37%) sepia(92%) saturate(749%)
             hue-rotate(202deg) brightness(94%) contrast(101%);
+}
+
+.grupo_esquerda .item_header:first-child:hover .icones_header {
+    filter: brightness(0) saturate(100%) invert(37%) sepia(92%) saturate(749%)
+            hue-rotate(202deg) brightness(94%) contrast(101%);
+    opacity: 1;
+}
+
+.grupo_esquerda .item_header:first-child .icones_header {
+    filter: brightness(0);
+    opacity: 0.45; 
+}
+
+.item_header:hover p {
+    color: #235AFF;
 }
 
 .logo_header {
