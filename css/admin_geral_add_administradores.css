@@ -5,6 +5,8 @@
 body {
     background-color: #FFFFFF;
 }
+
+/* HEADER */
 header {
     display: flex;
     align-items: center;
@@ -118,4 +120,8 @@ form {
 border-style: none;
 border-radius: 0px;
 cursor: pointer;
+}
+button a {
+    text-decoration: none;
+    color: #235AFF;
 }

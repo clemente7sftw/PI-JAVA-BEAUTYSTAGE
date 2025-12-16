@@ -4,12 +4,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BeautyStage | Clientes</title>
+    <title>BeautyStage | Administradores</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="../css/admin_geral_add_clientes.css">
+    <link rel="stylesheet" href="../css/admin_geral_add_administradores.css">
     <link rel="icon" type="image/png" href="../assets/icone_empresas_logo.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -40,20 +40,19 @@
                 <a href="admin_geral_perfil.html"> <img class="icones_header" src="../assets/icone_perfil.png" alt="">
                     <p>Perfil</p>
                 </a>
-            </div>
+            </div> 
         </div>
-    </header>     
+    </header> 
 <main>
     <form action="" method="post" enctype="multipart/form-data">
-        <label for="nome_cliente">Nome:</label> 
-        <input type="text" id="nome_cliente" name="nome_cliente">
-        <label for="email_cliente">Email:</label> 
-        <input type="text" id="email_cliente" name="email_cliente">
-        <label for="telefone">Telefone:</label>
-        <input type="text" id="telefone" name="telefone">
-        <button class="btn_voltar"><a href="admin_geral_clientes.html">Voltar</a></button><button type="submit" class="btn_cad">Adicionar Cliente</button>
+        <label for="nome_admin">Nome:</label> 
+        <input type="text" id="nome_admin" name="nome_admin">
+        <label for="email_admin">Email:</label> 
+        <input type="text" id="email_admin" name="email_admin">
+        <button class="btn_voltar"><a href="admin_geral_administradores.html">Voltar</a></button><button class="btn_cad" id="btnAdmin" type="button">Salvar</button>
+
     </form>
-</main>
-    
+    <script src="../js/admin_geral_add_administradores.js"></script>
+</main>     
 </body>
 </html>

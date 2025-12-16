@@ -1,0 +1,260 @@
+* {
+    font-family: "Inter Tight", sans-serif;
+}
+
+body {
+    background-color: #FFFFFF;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 40px;
+    position: relative;
+    font-size: 15px;
+}
+header a {
+    text-decoration: none;
+}
+
+.item_header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 3px;
+    cursor: pointer;
+}
+
+.item_header img {
+    width: 35px;
+    transition: filter 0.3s ease;
+}
+
+.item_header p {
+    color: #00000067;
+    transition: color 0.3s ease;
+}
+
+.grupo_esquerda,
+.grupo_direita {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+.grupo_direita img {
+    width: 30px;
+}
+
+.grupo_esquerda .item_header:first-child p {
+    color: #235AFF;
+}
+
+.grupo_esquerda .item_header:first-child img,
+.item_header:hover img {
+    filter: brightness(0) saturate(100%) invert(37%) sepia(92%) saturate(749%)
+            hue-rotate(202deg) brightness(94%) contrast(101%);
+}
+
+.item_header:hover p {
+    color: #235AFF;
+}
+
+.logo_header {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 70px;
+}
+
+/* ÁREA DE EMPRESAS */
+.empresas_admin {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.icone_area img {
+    width: 25px;
+}
+
+.texto_area {
+    display: flex;
+    flex-direction: column;
+    line-height: 18px;
+}
+
+.texto_area span {
+    font-size: 14px;
+    color: #00000079;
+}
+
+.texto_area select {
+    border: none;
+    font-size: 16px;
+    padding: 3px 0;
+    cursor: pointer;
+    color: black;
+}
+
+/* NAV CRUDS */
+.nav_cruds {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    a{
+        text-decoration: none;
+        color: #00000079;
+        transition: all 0.3s ease;
+    }
+    a:hover {
+        color: #235AFF;
+    }
+}
+
+.nav_cruds button {
+    color: #00000079;
+    height: 35px;
+    border: 0.5px solid #ffffff;
+    border-radius: 6px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.103);
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+}
+
+.nav_cruds button:hover {
+    color: #235AFF;
+    border-color: #235AFF;
+}
+
+/* SECTION BUTTONS */
+section button {
+    color: #00000079;
+    height: 35px;
+    border: 0.5px solid #ffffff;
+    border-radius: 6px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.103);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icone_add {
+    width: 20px;
+    cursor: pointer;
+}
+
+/* FLECHAS */
+.flecha_esquerda,
+.flecha_direita {
+    display: none;
+    font-size: 25px;
+    background-color: white;
+    border: none;
+    cursor: pointer;
+    color: #00000079;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.103);
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    transition: transform 0.3s ease;
+}
+
+.flecha_esquerda:hover,
+.flecha_direita:hover {
+    transform: scale(1.15);
+}
+
+.titulo_profissionais,
+.titulo_servicos {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+/* PROFISSIONAIS */
+.card_profissional img {
+    width: 50px;
+}
+
+.cargo_profissional {
+    color: #00000079;
+}
+
+.profissionais_cards {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.card_profissional {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    height: 80px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.103);
+}
+
+.card_profissional p {
+    margin: 0;
+}
+
+.card_profissional div {
+    display: flex;
+    flex-direction: column;
+}
+
+.selo_avaliacao {
+    background-color: #F7D794;
+    display: flex;
+    align-items: center;
+    width: 120px;
+    height: 30px;
+    border-radius: 10px;
+}
+
+/* SERVIÇOS */
+.servicos_wrapper {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+#listaServicos {
+    display: flex;
+    gap: 10px;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    white-space: nowrap;
+    padding: 10px;
+    flex: 1;
+}
+
+#listaServicos::-webkit-scrollbar {
+    display: none;
+}
+
+#listaServicos button {
+    color: #00000079;
+    height: 35px;
+    border: 0.5px solid #ffffff;
+    border-radius: 6px;
+    background-color: #ffffff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.103);
+    padding: 0 12px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    transition: all 0.3s ease;
+}

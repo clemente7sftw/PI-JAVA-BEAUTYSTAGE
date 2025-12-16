@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BeautyStage | Cadastro</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="../css/admin_geral_cadastro.css">
+    <link rel="icon" type="image/png" href="../assets/icone_empresas_logo.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&display=swap"
+     rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img class="logo_header" src="../assets/logo_empresas.png" alt="Logo">
+    </header>  
+    <nav class="progresso_bar">
+        <button class="check"><img src="../assets/check.png" alt=""></button> <p>Informações da Empresa</p> >
+        <button class="ativo">2</button> <p>Cadastro</p> >
+        <button>3</button> <p>Bem-vindo</p>
+    </nav>   
+<main>
+    <form action="" method="post" enctype="multipart/form-data">
+        <label for="Email">E-mail</label>
+        <input type="email" id="Email" name="Email" placeholder="Ex: empresa@beautystage.com.br">
+        <label for="senha">Senha</label>
+        <input type="password" id="senha" name="senha">
+        <select id="tipo_empresa" required>
+            <option value="" disabled selected>Selecione uma opção</option>
+            <option value="Barbearia">Barbearia</option>
+            <option value="SalaoBeleza">Salão de Beleza</option>
+            <option value="ClinicaEstetica">Clínica de Estética</option>
+        </select>
+        <input type="file" class="file_label " id="imagem_servico" name="imagem_servico" accept="image/*">
+        <button class="btn_voltar"><a href="admin_geral_info_add.html">Voltar</a></button><button type="submit" class="btn_cad"><a href="admin_geral_home.html">Continuar</a></button>
+    </form>
+</main>
+    
+</body>
+</html>

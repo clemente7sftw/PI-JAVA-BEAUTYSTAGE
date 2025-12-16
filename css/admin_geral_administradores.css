@@ -6,6 +6,7 @@ body {
     background-color: #FFFFFF;
 }
 
+/* HEADER */
 header {
     display: flex;
     align-items: center;
@@ -204,14 +205,14 @@ section button {
     cursor: pointer;
 }
 
-/* Cards de cargos */
-.cargos_cards {
+/* Cards de serviços */
+.admin_cards {
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
-.card_cargo{
+.card_admin {
     display: flex;
     align-items: center;
     gap: 10px;
@@ -220,20 +221,20 @@ section button {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.103);
 }
 
-.card_cargo img {
+.card_admin img {
     width: 50px;
 }
 
-.card_cargo p {
+.card_admin p {
     margin: 0;
     color: #00000065;
 }
 
-.card_cargo p:first-of-type {
+.card_admin p:first-of-type {
     color: #000000;
 }
 
-.card_cargo div {
+.card_admin div {
     display: flex;
     flex-direction: column;
 }

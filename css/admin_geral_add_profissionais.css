@@ -13,11 +13,9 @@ header {
     position: relative;
     font-size: 15px;
 }
-.grupo_esquerda .item_header:first-child .icones_header {
-    filter: brightness(0) saturate(100%) invert(74%) sepia(0%) saturate(0%)
-            hue-rotate(180deg) brightness(90%) contrast(90%);
+header a{
+    text-decoration: none;
 }
-
 .item_header {
     display: flex;
     flex-direction: column;
@@ -48,14 +46,20 @@ header {
     width: 30px;
 }
 
-.grupo_esquerda .item_header:first-child p {
-    color: #00000079;
-}
-
-.grupo_esquerda .item_header:first-child img,
 .item_header:hover img {
     filter: brightness(0) saturate(100%) invert(37%) sepia(92%) saturate(749%)
             hue-rotate(202deg) brightness(94%) contrast(101%);
+}
+
+.grupo_esquerda .item_header:first-child:hover .icones_header {
+    filter: brightness(0) saturate(100%) invert(37%) sepia(92%) saturate(749%)
+            hue-rotate(202deg) brightness(94%) contrast(101%);
+    opacity: 1;
+}
+
+.grupo_esquerda .item_header:first-child .icones_header {
+    filter: brightness(0);
+    opacity: 0.45; 
 }
 
 .item_header:hover p {
@@ -68,6 +72,7 @@ header {
     transform: translateX(-50%);
     height: 70px;
 }
+
 main {
     display: flex;
     justify-content: center; 
@@ -113,4 +118,8 @@ form {
 border-style: none;
 border-radius: 0px;
 cursor: pointer;
+}
+button a {
+    text-decoration: none;
+    color: #235AFF;
 }
