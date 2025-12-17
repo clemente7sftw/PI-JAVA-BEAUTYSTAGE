@@ -3,9 +3,371 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Syne:wght@400..800&display=swap" rel="stylesheet">
+
     <title>BeautyStage</title>
 </head>
 <body>
+    <header>
+        <div class="header-container">
+            <img class="logo_header" src="../assets/logo-branca.png" alt="Logo" width="240px">
+
+            <nav>
+                <a href="">HOME &nbsp;</a>
+                <a href="">SOBRE NÓS &nbsp;</a>
+                <a href="">EMPRESAS &nbsp;</a>
+                <a href="">CONTATO</a>
+            </nav>
+
+            <div class="grupo_direita">
+                <div class="botao-direita">
+                    <button class="botao-entrar">ENTRAR</button>
+                </div>
+            </div>
+        </div>
+    </header>
+    <br><br><br><br>
+    <div class="alinha-pesquisa">
+        <div class="barra-pesquisa">
+            <input type="text" placeholder="Pesquise regiões próximas de você" class="input-pesquisa">
+
+            <div class="divisor"></div>
+
+            <input type="text" placeholder="Pesquise os serviços que deseja realizar" class="input-pesquisa">
+
+            <button class="botao-pesquisa"><img src="../assets/icone-pesquisa-azul.png" alt=""></button>
+        </div>
+    </div>
+    <br><br>
+    <div class="imagem-texto">
+        <img src="../assets/imagem-pente-cabelo.png" alt="" width="280px">
+        <div class="texto-principal">
+            <p class="texto">ENCONTRE E AGENDE SERVIÇOS DE BELEZA E BEM-ESTAR.</p>
+            <p class="texto">A QUALQUER HORA, DE QUALQUER LUGAR.</p>
+        </div>
+    </div>
+    <br>
+    <div class="lista-servicos">
+        <div class="card-servico" style="--bg-hover: url('../assets/imagem-lavagem-capilar.png')">
+            <h5 class="nome-servico">Lavada Especial</h5>
+            <br>
+            <p class="descricao-servico">Lavagem que deixa o cabelo macio e brilhoso.</p>
+            <p class="endereco-salao">Rua André de Barros, 750</p>
+            <br>
+            <h6 class="preco-servico">R$ 150.00</h6>
+            <br>
+            <button class="botao-mais-info">Mais Informações </button>
+        </div>
+
+        <div class="card-servico" style="--bg-hover: url('../assets/')">
+            <h5 class="nome-servico">Corte Feminino</h5>
+            <br>
+            <p class="descricao-servico"></p>
+            <p class="endereco-salao"></p>
+            <br>
+            <h5 class="preco-servico"></h5>
+            <br>
+            <button class="botao-mais-info">Mais Informações </button>
+        </div>
+    </div>
+    <br>
+    <h4>EMPRESAS</h4>
+    <div class="banner">
+        <img src="" alt="">
+    </div>
+    <br>
+    <h4>FALE CONOSCO</h4>
+    <div class="fale-conosco">
+        <div class="contatos">
+            <p class="texto-contato">Não perca mais tempo e entre agora em contato com a nossa equipe. Teremos o maior prazer em ajudar você.</p>
+            <nav class="nav-contatos">
+                <a href="" class="info-contato"><img src="../assets/icone-telefone-branco.png" alt="" width="16px">&nbsp; (41) 99999-9999</a>
+                <a href="" class="info-contato"><img src="../assets/icone-whatsapp-branco.png" alt="" width="18px">&nbsp; (41) 99999-9999</a>
+                <a href="" class="info-contato"><img src="../assets/icone-email-branco.png" alt="" width="18px">&nbsp; contato@beautystage.com.br</a>
+            </nav>
+        </div>
+        <div>
+            <form action="submit">
+                <h3>Formulário de Contato</h3>
+                <br>
+                <input type="text" placeholder="Nome completo" class="nome-form">
+                <br><br>
+                <input type="tel" placeholder="Celular/Whatsapp">
+                <input type="email" placeholder="E-mail">
+                <br><br>
+                <textarea name="mensagem" id="mensagem-form" class="mensagem-form" placeholder="Mensagem"></textarea>
+                <br>
+                <button class="botao-form">Enviar Mensagem</button>
+            </form>
+        </div>
+    </div>
+
+<style>
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* HEADER */
+header{
+    width: 100%;
+    font-family: 'Syne', 'Inter', Arial, Helvetica, sans-serif;
+    /* border-bottom: 1px solid #e6e6e6; */
+    box-shadow: 0 3px 0 #e6e6e6;
+}
+
+.header-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.logo_header{
+    display: flex;
+    margin: 24px 0;
+    /* align-items: center; */
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+a{
+    text-decoration: none;
+    color: #8d8d8d;
+}
+
+.botao-entrar{
+    border-radius: 20px;
+    background-color: #000000;
+    color: #ffffff;
+    padding: 14px 60px;
+    border: none;
+    cursor: pointer;
+}
+
+/* BARRA DE PESQUISA */
+.alinha-pesquisa{
+    display: flex;
+    justify-content: center;
+}
+
+.barra-pesquisa{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    max-width: 800px;
+    padding: 12px 14px;
+    border-radius: 50px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08), 0 2px 6px rgba(0, 0, 0, 0.04);
+    flex-wrap: wrap;
+}
+
+.input-pesquisa{
+    border: none;
+    font-size: 14px;
+    flex: 1;
+    color: #333333;
+}
+
+.divisor{
+    width: 1px;
+    height: 28px;
+    background: #999999;
+}
+
+.botao-pesquisa{
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.botao-pesquisa:hover {
+    filter: brightness(0.8);
+}
+
+/* IMAGEM ILUSTRATIVA E TEXTO PRINCIPAL */
+.imagem-texto{
+    display: flex;
+    align-items: center;
+}
+
+/* .texto-principal{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content:center;
+    justify-items: center;
+} */
+
+.texto{
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    font-family: 'Syne', 'Inter', Arial, Helvetica, sans-serif;
+    font-size: 32px;
+    font-weight: 500;
+    text-align: center;
+}
+
+/* CARDS SERVIÇOS */
+.lista-servicos{
+    display: flex;
+    gap: 20px;
+    margin: 0px 100px;
+    flex-wrap: wrap;
+}
+
+.card-servico{
+    border-radius:10px;
+    padding: 30px;
+    max-width: 300px;
+    /* justify-items: center;
+    align-items: center; */
+    border: solid 1px #e5e5e5;
+}
+
+.card-servico:hover{
+    background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+        var(--bg-hover); 
+    p{
+        color: #ffffff;
+    }
+}
+
+.card-servico h5{
+    font-family: 'Syne', 'Inter', Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+.card-servico p{
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #000000;
+}
+
+.preco-servico{
+    font-size: 16px;
+    font-weight: 500;
+    color: #ffffff;
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+}
+
+.botao-mais-info{
+    background: #403529;
+    border: none;
+    color: #ffffff;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+/* Títulos */
+h4{
+    font-family: 'Syne', 'Poppins', 'Inter', Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+}
+/* FALE CONOSCO */
+.fale-conosco{
+    display: flex;
+    margin: 10px 100px;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.contatos{
+    margin: 20px 100px;
     
+}
+
+.nav-contatos{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.texto-contato{
+    font-family: 'Poppins', 'Inter', Arial, Helvetica, sans-serif;
+    color: #313131;
+    font-size: 18px;
+}
+
+.info-contato{
+    display: flex;
+    align-items: center;
+    gap: 2px;
+    text-decoration: none;
+    border-radius: 20px;
+    background-color: #235aff;
+    padding: 10px;
+    color: #ffffff;
+    font-family: 'Inter', 'Poppins', Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    max-width: 300px;
+}
+
+/* Formulário */
+h3{
+    font-family: 'Poppins', 'Inter', Arial, Helvetica, sans-serif;
+    font-weight: 500;
+}
+
+form{
+    border: solid 1px #646464;
+    width: 440px;
+    padding: 12px;
+    border-radius: 10px;
+}
+
+input{
+    padding: 10px;
+    border-radius: 20px;
+    border: solid 1px #999999;
+    width: 200px;
+}
+
+.nome-form{
+    width: 405px;
+}
+
+.mensagem-form{
+    padding: 10px;
+    border-radius: 16px;
+    border: solid 1px #999999;
+    width: 400px;
+    height: 100px;
+}
+
+::placeholder{
+    color: #000000;
+    font-family: 'Poppins', 'Inter', Arial, Helvetica, sans-serif;
+}
+
+.botao-form{
+    background: #235aff;
+    border: none;
+    border-radius: 24px;
+    padding: 16px;
+    color: #ffffff;
+    width: 400px;
+    font-family: 'Poppins', 'Inter', Arial, Helvetica, sans-serif;
+}
+</style>
 </body>
 </html>
