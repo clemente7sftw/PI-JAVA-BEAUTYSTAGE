@@ -84,3 +84,86 @@ header a{
             hue-rotate(202deg) brightness(94%) contrast(101%);
     opacity: 1;
 }
+.titulo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.titulo a{
+    text-decoration: none;
+    color: #000;
+    transition: color 0.3s ease;
+}
+.icone_add {
+    width: 20px;
+    cursor: pointer;
+}
+.progresso_bar{
+    display: flex;
+    align-items: center; 
+    gap: 10px; 
+    justify-content: center;
+    button{
+        border-radius: 100px;
+        border-style: none;
+        width: 30px;
+        height: 30px;
+        color: #00000067;
+    }
+    .ativo{
+        background-color: #000000;
+        color: white;
+    }
+}
+.progresso_bar_titulo{
+    text-align: center;
+}
+.clientes_cards {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    cursor: pointer;
+}
+.clientes_cards:hover .card_cliente {
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease;
+}
+
+.card_cliente {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.103);
+    position: relative; 
+}
+
+.card_cliente .icone_editar {
+    width: 30px;
+    cursor: pointer;
+    position: absolute;
+    right: 10px; 
+    top: 10px;   
+}
+
+.card_cliente div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.imagem_perfil {
+    width: 50px;
+}
+
+.card_cliente p {
+    margin: 0;
+    color: #00000065;
+}
+
+.card_cliente p:first-of-type {
+    color: #000000;
+}
+
+

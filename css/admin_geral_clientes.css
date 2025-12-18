@@ -200,6 +200,9 @@ section button {
     align-items: center;
     justify-content: center;
 }
+.icone_editar{
+    width: 30px;
+}
 
 .icone_add {
     width: 20px;
@@ -220,9 +223,24 @@ section button {
     padding: 10px;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.103);
+    position: relative; 
 }
 
-.card_cliente img {
+.card_cliente .icone_editar {
+    width: 30px;
+    cursor: pointer;
+    position: absolute;
+    right: 10px; 
+    top: 10px;   
+}
+
+.card_cliente div {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.imagem_perfil {
     width: 50px;
 }
 
