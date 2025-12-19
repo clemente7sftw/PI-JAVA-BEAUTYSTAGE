@@ -49,9 +49,27 @@
             <div class="foto_perfil">
                 <img src="../assets/foto-beauty-salon.jpg" alt="">
             </div>
-        <h1>Nome Salão</h1>
-        <img src="../assets/mapa_cinza.png" alt=""> <span>endereco</span>
-        <img src="../assets/relogio.png" alt=""> <span>horario</span>
+        <input class="nome_estabelecimento" type="text" disabled value="Nome do salão">
+        <img src="../assets/mapa_cinza.png" alt=""> <input type="text" disabled value="endereço">
+        <img src="../assets/relogio.png" alt=""> <input type="text" disabled value="horário de funcionamento">
+        <img src="../assets/icone-estrela.png" alt="" width="15"><span>Avaliações</span> <br>
+        <input type="text" disabled value="Descrição"> <br>
+        <button id="btnEditar">Editar Perfil</button>
     </main>
+    <script>
+    const botao = document.getElementById("btnEditar");
+    const inputs = document.querySelectorAll("input");
+
+    botao.addEventListener("click", () => {
+    inputs.forEach(input => {
+    input.disabled = false;
+    });
+    });  
+    if (botao.clicked) {
+        inputs.forEach(input => {
+            input.disabled = false;
+        });
+    }
+    </script>
 </body>
 </html>
