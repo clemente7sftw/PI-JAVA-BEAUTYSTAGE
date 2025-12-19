@@ -25,7 +25,7 @@
             </div>
         </div>
 
-        <img class="logo_header" src="../assets/logo_empresas.png" alt="Logo">
+        <img class="logo_header" src="../assets/logo_azul.png" alt="Logo" width="420px">
 
         <div class="grupo_direita">
             <div class="item_header">
@@ -100,8 +100,46 @@
         </div>
     
         <div class="continuar-agendamento">
-            <button class="botao-confirmar">Confirmar Agendamento</button>
+            <button class="botao-confirmar" disabled>Confirmar Agendamento</button>
         </div>
     </div>
+
+    <script>
+        const datas = document.querySelectorAll('.card-data');
+        const horas = document.querySelectorAll('.card-hora');
+        const botao = document.querySelector('.botao-confirmar');
+
+        let dataSelecionada = false;
+        let horaSelecionada = false;
+
+        function validarConfirmacao() {
+            if (dataSelecionada && horaSelecionada) {
+                botao.disabled = false;
+            } else {
+                botao.disabled = true;
+            }
+        }
+        
+        datas.forEach(card => {
+            card.addEventListener('click', () => {
+                datas.forEach(c => c.classList.remove('ativo'));
+                card.classList.add('ativo');
+
+                dataSelecionada = true;
+                validarConfirmacao();
+            });
+        });
+
+        horas.forEach(card => {
+            card.addEventListener('click', () => {
+                horas.forEach(c => c.classList.remove('ativo'));
+                card.classList.add('ativo');
+
+                horaSelecionada = true;
+                validarConfirmacao();
+            });
+        });
+
+    </script>
 </body>
 </html>

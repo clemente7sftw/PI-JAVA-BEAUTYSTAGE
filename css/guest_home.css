@@ -3,7 +3,6 @@ body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Inter';
     font-size: 14px;
     background: #fafafa;
 }
@@ -16,6 +15,7 @@ header {
     padding: 15px 40px;
     position: relative;
     font-size: 15px;
+    font-family: 'Inter';
 }
 
 .item_header {
@@ -66,10 +66,59 @@ header {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    height: 70px;
+    height: 94px;
 }
 
+/* BARRA DE PESQUISA */
+.alinha-pesquisa{
+    display: flex;
+    justify-content: center;
+    
+}
 
+.barra-pesquisa{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    max-width: 800px;
+    padding: 12px 14px;
+    border-radius: 50px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08), 0 2px 6px rgba(0, 0, 0, 0.04);
+    flex-wrap: wrap;
+}
+
+.input-pesquisa{
+    border: none;
+    font-size: 14px;
+    flex: 1;
+    color: #333333;
+    font-family: 'Poppins', 'Inter', Arial, Helvetica, sans-serif;
+    border-radius: 20px;
+    padding: 6px;
+    font-weight: 400;
+    font-size: 14px;
+    background: transparent;   
+}
+
+.divisor-pesquisa{
+    width: 1px;
+    height: 28px;
+    background: #999999;
+}
+
+.botao-pesquisa{
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.botao-pesquisa:hover {
+    filter: brightness(0.8);
+}
+
+/* SERVIÇOS */
 .tags-servicos{
     display: flex;
     flex-wrap: wrap;
@@ -90,20 +139,23 @@ header {
     border: none;
 }
 
-.tag-servico.ativo{
-    background-color: #3d3d3d;
+.tag-servico:hover{
+    background-color: #403529;
     color: white;
 }
 
 .titulo{
     padding: 10px 100px;
+    font-family: 'Inter';
 }
 
+/* SALÕES */
 .lista-saloes{
     display: flex;
     flex-direction: column;
     padding: 10px 100px;
     gap: 12px;
+    font-family: 'Inter';
 }
 
 .card-salao{
