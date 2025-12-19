@@ -1,0 +1,491 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* HEADER */
+header{
+    width: 100%;
+    font-family: 'Syne', 'Inter', Arial, Helvetica, sans-serif;
+    /* border-bottom: 1px solid #e6e6e6; */
+    box-shadow: 0 3px 0 #e6e6e6;
+}
+
+.header-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.logo_header{
+    display: flex;
+    margin: 24px 0;
+    /* align-items: center; */
+}
+
+nav{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+a{
+    text-decoration: none;
+    color: #8d8d8d;
+}
+
+.botao-entrar{
+    border-radius: 999px;
+    background-color: #000000;
+    color: #ffffff;
+    padding: 14px 70px;
+    border: none;
+    cursor: pointer;
+    font-family: 'Syne';
+    font-size: 16px;
+}
+
+/* BARRA DE PESQUISA */
+.alinha-pesquisa{
+    display: flex;
+    justify-content: center;
+}
+
+.barra-pesquisa{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    max-width: 800px;
+    padding: 12px 14px;
+    border-radius: 50px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08), 0 2px 6px rgba(0, 0, 0, 0.04);
+    flex-wrap: wrap;
+}
+
+.input-pesquisa{
+    border: none;
+    font-size: 14px;
+    flex: 1;
+    color: #333333;
+}
+
+.divisor-pesquisa{
+    width: 1px;
+    height: 28px;
+    background: #999999;
+}
+
+.botao-pesquisa{
+    border: none;
+    background: transparent;
+    cursor: pointer;
+}
+
+.botao-pesquisa:hover {
+    filter: brightness(0.8);
+}
+
+/* IMAGEM ILUSTRATIVA E TEXTO PRINCIPAL */
+.imagem-texto{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 1600px;
+    margin: 20px 0;
+}
+
+.imagem-texto img{
+    width: 20%;
+}
+
+.texto-principal{
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.texto{
+    font-family: 'Syne', 'Inter', Arial, Helvetica, sans-serif;
+    font-size: 32px;
+    font-weight: 600;
+    text-align: center;
+    line-height: 1.3;
+}
+
+/* CARDS SERVIÇOS */
+.lista-servicos{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+    gap: 32px;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 24px;
+}
+
+.card-servico{
+    border-radius:10px;
+    padding: 24px;
+    max-width: 400px;
+    border: solid 1px #e5e5e5;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 280px;
+    background-color: #ffffff;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.card-servico:hover{
+    background-image: 
+        linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+        var(--bg-hover); 
+    p, .preco-servico{
+        color: #ffffff;
+    }
+
+    .preco-servico{
+        color: #ffffff;
+    }
+}
+
+.card-servico h5{
+    font-family: 'Syne', 'Inter', Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+.card-servico p{
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    color: #000000;
+    margin-bottom: 6px;
+}
+
+.preco-servico{
+    font-size: 16px;
+    font-weight: 500;
+    color: #000000;
+    font-family: 'Inter', Arial, Helvetica, sans-serif;
+}
+
+.botao-mais-info{
+    align-self: center;
+    background: #403529;
+    border: none;
+    color: #ffffff;
+    padding: 12px;
+    border-radius: 2px;
+    width: 70%;
+    text-align: center;
+}
+
+/* BANNER */
+.base-banner{
+    width: 100%;
+    height: 60vh;
+    background-image: url('../assets/imagem-banner-mulher-ruiva.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.banner{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-10%, -50%);
+    text-align: left;
+    color: #ffffff;
+    max-width: 800px;
+    padding: 20px;
+}
+
+.banner img{
+    width: 100vw;
+    display: block;
+}
+
+.banner p, .banner h2{
+    font-family: 'Syne', 'Poppins', 'Inter', Arial, Helvetica, sans-serif;
+    /* color: #ffffff; */
+    margin-bottom: 20px;
+}
+
+.banner p{
+    font-size: 20px;
+}
+.banner h2{
+    font-size: 40px;
+}
+
+.botao-cadastrar-empresa{
+    background-color: #202020;
+    border: none;
+    color: white;
+    border-radius: 999px;
+    padding: 14px;
+    font-family: 'Syne', 'Poppins', 'Inter', Arial, Helvetica, sans-serif;
+    font-size: 17px;
+    width: 160px;
+}
+
+/* EMPRESAS - SALÕES */
+.empresas{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: stretch;
+    margin: 0 auto;
+}
+
+.banner-lateral{
+    width: 50%;
+    background-image: url('../assets/imagem-beautystage-corte de cabelo-banner.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.lista-empresas{
+    width: 50%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    flex-wrap: wrap;
+    /* margin: 30px; */
+    gap: 16px;
+    /* position: relative; */
+}
+
+.card-empresa{
+    width: 220px;
+    height: 400px;
+    overflow: hidden;
+    padding: 12px;
+    border-radius: 16px;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.card-empresa:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 24px rgba(0,0,0,0.08);
+}
+
+.imagem-empresa{
+    height: 240px;
+    background-image: url('../assets/imagem-visualle-salao.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 12px;
+}
+
+.info-empresa{
+    padding: 16px;
+    text-align: left;
+}
+
+.divisor{
+    width: 100%;
+    height: 1px;
+    background: #000000;
+}
+
+.redes-sociais{
+    margin-top: 24px;
+}
+
+.card-empresa h5{
+    font-family: 'Poppins', 'Inter', Arial, Helvetica, sans-serif;
+    font-weight: 500;
+}
+
+/* Títulos */
+h4{
+    font-family: 'Syne', 'Poppins', 'Inter', Arial, Helvetica, sans-serif;
+    font-size: 24px;
+    display: flex;
+    justify-content: center;
+    margin-top: 24px;
+    margin-bottom: 16px;
+}
+/* FALE CONOSCO */
+.fale-conosco{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 60px auto;
+    gap: 200px;
+}
+
+@media (max-width: 900px){
+    .fale-conosco{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+.contatos{
+    max-width: 480px;
+    padding-top: 14px;
+    text-align: left;
+}
+
+.nav-contatos{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+}
+
+.texto-contato{
+    font-family: 'Poppins', 'Inter', Arial, Helvetica, sans-serif;
+    color: #313131;
+    font-size: 18px;
+    margin-bottom: 24px;
+}
+
+.info-contato{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 5px;
+    padding: 12px 16px;
+    background-color: #235aff;
+    color: #ffffff;
+    border-radius: 20px;
+    text-decoration: none;
+    font-family: 'Inter', 'Poppins', Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    width: fit-content;
+}
+
+/* Formulário */
+h3{
+    font-family: 'Poppins', 'Inter', Arial, Helvetica, sans-serif;
+    font-weight: 500;
+}
+
+form{
+    border: solid 1px #646464;
+    width: 480px;
+    padding: 20px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+input{
+    padding: 10px;
+    border-radius: 20px;
+    border: solid 1px #999999;
+    width: 100%;
+}
+
+.nome-form{
+    width: 100%;
+}
+
+.linha-form{
+    display: flex;
+    gap: 8px;
+    /* width: 100%; */
+}
+
+.mensagem-form{
+    padding: 10px;
+    border-radius: 16px;
+    border: solid 1px #999999;
+    width: 100%;
+    height: 100px;
+}
+
+::placeholder{
+    color: #000000;
+    font-family: 'Poppins', 'Inter', Arial, Helvetica, sans-serif;
+}
+
+.botao-form{
+    background: #235aff;
+    border: none;
+    border-radius: 24px;
+    padding: 16px;
+    color: #ffffff;
+    width: 100%;
+    font-family: 'Poppins', 'Inter', Arial, Helvetica, sans-serif;
+}
+
+/* FOOTER */
+footer{
+    font-family: 'Lato', 'Inter', Arial, Helvetica, sans-serif;
+    background: #000000;
+    margin-top: 24px;
+}
+
+.topo-footer{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    padding: 60px 20px;
+    gap: 80px;
+    max-width: 1200px;
+}
+
+.coluna-footer{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+.footer-logo{
+    max-width: 480px;
+}
+
+.logo-footer{
+    width: 320px;
+}
+
+.texto-footer{
+    color: #ffffff;
+    font-weight: 300;
+    font-size: 16px;
+}
+
+.a-footer{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+.a-footer.contato{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.baixo-footer{
+    background: #525252;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 24px 20px;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.p-footer{
+    color: #ffffff;
+}
+
+.a-footer-termos{
+    color: #000000;
+}

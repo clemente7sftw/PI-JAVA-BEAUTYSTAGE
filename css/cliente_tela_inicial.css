@@ -1,8 +1,8 @@
+
 body{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Inter';
     font-size: 14px;
     background: #fafafa;
 }
@@ -15,6 +15,7 @@ header {
     padding: 15px 40px;
     position: relative;
     font-size: 15px;
+    font-family: 'Inter';
 }
 
 .item_header {
@@ -117,28 +118,54 @@ header {
     filter: brightness(0.8);
 }
 
-/* LISTA AGENDAMENTOS */
-.titulo{
-    padding: 10px 100px;
+/* SERVIÇOS */
+.tags-servicos{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0 100px;
+    gap: 20px;
 }
 
-.lista-agendamentos{
+.tag-servico{
+    display: flex;
+    text-align: center;
+    align-items: center;
+    cursor: pointer; 
+    padding: 7px;
+    gap: 2px;
+    color: #9d9ea6;;
+    background: #ffffff;
+    border-radius: 10px;
+    border: none;
+}
+
+.tag-servico:hover{
+    background-color: #403529;
+    color: white;
+}
+
+.titulo{
+    padding: 10px 100px;
+    font-family: 'Inter';
+}
+
+/* SALÕES */
+.lista-saloes{
     display: flex;
     flex-direction: column;
     padding: 10px 100px;
     gap: 12px;
+    font-family: 'Inter';
 }
 
-.card-agendamento{
+.card-salao{
     display: flex;
     align-items: center;
-    gap: 24px;
+    gap: 12px;
     padding: 12px;
     background: #ffffff;
-    border-radius: 16px;
+    border-radius: 20px;
     position: relative;
-    flex-wrap: wrap;
-    justify-content: space-between;
 }
 
 .imagem-salao{
@@ -148,33 +175,13 @@ header {
     margin: 4px 10px 4px 10px;
     max-width: 100%;
     border-radius: 16px;
-    position:static;
 }
 
-/* .info-agendamento{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-    gap: 24px;
-    align-items: center;
-} */
-
-.salao{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 24px;
-}
-.info-salao{
-    align-items: center;
-    justify-content: center;
-}
-
-.info-salao b, .info-servico b, .info-datahora b{
+.info-salao b{
     font-size: 16px;
 }
 
-.info-salao p, .info-servico p, .info-datahora p{
+.info-salao p{
     display: flex;
     align-items: center;
     margin: 8px 0;
@@ -182,76 +189,12 @@ header {
     color: #888;
 }
 
-.info-datahora{
-    margin-right: 24px;
+.distancia-salao{
+    position: absolute;
+    font-size: 14px;
+    color: #777;
+    right: 15px;
+    top: 24px;
+    margin: 8px;
 }
 
-/* AVISO DE CANCELAMENTO */
-.botao-cancelar{
-    background: #cfcfcf;
-    color: #ffffff;
-    border: none;
-    padding: 14px;
-    border-radius: 12px;
-    margin: 24px;
-    
-}
-
-.botao-cancelar:hover{
-    background: #403529;
-    color: white;
-    cursor: pointer;
-}
-
-.card-aviso{
-    display:none;
-    background: #ffffff;
-    padding: 20px;
-    border-radius: 20px;
-    margin-left: 120px;
-    margin-right: 120px;
-    font-size: 20px;
-    font-weight: 600;
-    text-align: center;
-}
-
-.icones-aviso{
-    display: flex;
-    justify-content: space-between;
-}
-
-.botao-fechar{
-    background: transparent;
-    border: none;
-    /* margin-left: 460px; */
-    /* position: absolute; */
-    right: 140px;
-    margin-top: 5px;
-}
-
-.texto-aviso{
-    justify-items: center;
-}
-
-.botoes{
-    display: flex;
-    gap: 40px;
-    justify-content: center;
-}
-
-.botao-confirmar, .botao-voltar{
-    background: #838d9e;
-    color: #ffffff;
-    padding: 14px;
-    width: 180px;
-    border: none;
-    border-radius: 16px;
-    font-size: 16px;
-    display: flex;
-    justify-content: center;
-}
-
-.botao-confirmar:hover, .botao-voltar:hover{
-    background: #1d3050;
-    cursor: pointer;
-}

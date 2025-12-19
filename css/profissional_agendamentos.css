@@ -243,5 +243,13 @@ header {
     cursor: pointer;
 }
 
+.botao-cancelar:hover{
+    color: white;
+    background: black;
+}
+
+.botao-visualizar:hover{
+    background: black;
+}
 
 
